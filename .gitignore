@@ -50,3 +50,18 @@ rsconnect/
 
 # Images folder
 09_Images/
+
+######################
+### Original Data #### 
+######################
+99_Original_Data/
+
+# Working data
+08_Working_Data_Backup/
+
+######################
+##### Off Topic ######
+######################
+
+# QUalitative data analysis that will not be included in the main report
+99_Qualitative_Data_offmenu/
