@@ -1,0 +1,137 @@
+---
+title: "Full Experimental Codes"
+author: "Huidi Yuan"
+date: today
+format:
+  html: default
+  pdf: 
+    pdf-engine: xelatex
+execute:
+  echo: false # set global chunk options: Show output only
+  warning: false # override these in individual chunks
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# Source library R script
+source("library.R")
+
+```
+
+```{r}
+data_main_recode <- read_csv("data_main_noFR.csv")
+```
+
+```{r}
+#| label: discriptive
+
+# How many rows
+nrow(data_main_recode)
+```
+
+```{r}
+# Perform F-tests for each variable
+# 1. Stigma
+stigma_aov <- aov(stigma_avg ~ label, data = data_main_recode)
+summary(stigma_aov)
+
+## plot stigma by label
+summary_stigma_aov <- data_main_recode %>%
+  group_by(label) %>%
+  summarise(
+    stigma_mean = mean(stigma_avg), 
+    stigma_se = sd(stigma_avg)/sqrt(n())
+  )
+
+ggplot(summary_stigma_aov, aes(x = label, y = stigma_mean, fill = label)) + 
+  geom_bar(stat = "identity", position = "dodge") + 
+  geom_errorbar(aes(ymin = stigma_mean - stigma_se, 
+                    ymax = stigma_mean + stigma_se), 
+                width = 0.2) +
+  geom_text(aes(label = round(stigma_mean, 2), y = stigma_mean), vjust = -0.5) +
+  labs(title = "Bar Graph of Stigma Averages by Label",
+    x = "Label",
+    y = "Average Stigma Score") +
+  ylim(0, 5) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+# Save this plot to jpg
+
+
+```
+
+```{r}
+# Bar graph: Stigma by Label
+bar_stigma_label <- ggplot(data_main_recode, aes(x = label, y = stigma_avg, fill = label)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Stigma Averages by Label",
+    x = "Label",
+    y = "Stigma Score") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  stat_compare_means(method = "anova",
+                     label.y = 4.5)
+```
+
+```{r}
+# Save the graph to jpg 
+ggsave("bar_stigma_label.jpg", plot = bar_stigma_label, width = 8, height = 6, units = "in")
+```
+
+```{r}
+## plot stertyp by label
+summary_stereotype_aov <- data_main_recode %>%
+  group_by(label) %>%
+  summarise(
+    stereotype_mean = mean(stereotype_avg), 
+    stereotype_se = sd(stereotype_avg)/sqrt(n())
+  )
+
+ggplot(summary_stereotype_aov, aes(x = label, y = stereotype_mean, fill = label)) + 
+  geom_bar(stat = "identity", position = "dodge") + 
+  geom_errorbar(aes(ymin = stereotype_mean - stereotype_se, 
+                    ymax = stereotype_mean + stereotype_se), 
+                width = 0.2) +
+  geom_text(aes(label = round(stereotype_mean, 2), y = stereotype_mean), vjust = -0.5) +
+  labs(title = "Bar Graph of Stereotype Averages by Label",
+    x = "Label",
+    y = "Average Stereotype Score") +
+  ylim(0, 5) +
+  scale_fill_manual(
+    values = c("#B0B0B0", "#404040")  # Custom colors for the fill aesthetic
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+I am calling @fig-stereotype here. And another sentence long one 11111111111. A long paragraph to see if the figure is placed in the right place.
+
+```{r}
+#| label: fig-stereotype
+#| fig-show: hold
+
+# box plot: stereotype by label
+bar_stereotype_label <- ggplot(data_main_recode, aes(x = label, y = stereotype_avg, fill = label)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Stereotype Averages by Label",
+    x = "Label",
+    y = "Stereotype Score") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  stat_compare_means(method = "anova",
+                     label.y = 5)
+
+bar_stereotype_label
+```
+
+```{r}
+# Save the graph to jpg
+ggsave("bar_stereotype_label.jpg", plot = bar_stereotype_label, width = 8, height = 6, units = "in")
+```
+
+
+Not here. 

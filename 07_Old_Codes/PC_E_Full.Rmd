@@ -23,7 +23,7 @@ library(mlogit)
 ```
 
 ```{r read original data}
-data <- read_csv("English/09_Original_Data/PC_Pilot-English_Prolific_December 12, 2024_17.20.csv")
+data <- read_csv("99_Original_Data/PC_Pilot-English_Prolific_December 12, 2024_17.20.csv")
 View(data)
 ```
 
