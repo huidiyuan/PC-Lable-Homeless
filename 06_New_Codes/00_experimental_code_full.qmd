@@ -9,6 +9,8 @@ format:
 execute:
   echo: false # set global chunk options: Show output only
   warning: false # override these in individual chunks
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -134,4 +136,149 @@ ggsave("bar_stereotype_label.jpg", plot = bar_stereotype_label, width = 8, heigh
 ```
 
 
-Not here. 
+### Correlation between stigma and donate_1
+
+```{r}
+#| label: correlation-stigma-donate
+
+# Pearson correlation between stigma and donate_1
+cor_stigma_donate <- cor.test(data_main_recode$stigma_avg, data_main_recode$donate_1, method = "pearson")
+
+cor_stigma_donate
+```
+
+```{r}
+#| label: fig-linear-stigma-donate
+#| fig-show: hold
+
+# Linear regression plot: stigma and donate_1
+linear_stigma_donate <- ggplot(data_main_recode, aes(x = stigma_avg, y = donate_1)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Linear Regression Plot of Stigma and Donate_1",
+    x = "Stigma Score",
+    y = "Donate_1") +
+  theme_minimal()
+
+linear_stigma_donate
+```
+
+```{r}
+#| label: correlation-stigma-donate-by-label
+
+# Pearson correlation between stigma and donate_1 by label
+cor_stigma_donate_by_label <- data_main_recode %>%
+  group_by(label) %>%
+  summarise(cor_stigma_donate = cor(stigma_avg, donate_1, method = "pearson"))
+
+cor_stigma_donate_by_label
+
+##### Simple Slope Analysis ##########
+
+# Run separate correlations within each label condition
+data_main_recode %>%
+  group_by(label) %>%
+  summarise(correlation = cor(stigma_avg, donate_1, use = "complete.obs"))
+
+##### Hierarchical Linear Regression ##########
+
+# Center stigma_avg
+data_main_recode_scale_stigma <- data_main_recode %>%
+  mutate(stigma_avg_c = scale(stigma_avg, center = TRUE, scale = FALSE))
+
+# Run Moderation Analysis
+moderation_model <- lm(donate_1 ~ stigma_avg_c * label, data = data_main_recode_scale_stigma)
+
+# Display results
+summary(moderation_model)
+
+```
+
+```{r}
+#| label: fig-linear-stigma-donate-by-label
+#| fig-show: hold
+
+# Linear regression plot: stigma and donate_1 by label
+ggplot(data_main_recode, aes(x = stigma_avg, y = donate_1, color = factor(label))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Moderation Effect of Label Condition on Stigma-Donation Relationship",
+       x = "Stigma",
+       y = "Donation",
+       color = "Label Condition") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+# Save the graph to jpg
+ggsave("09_Images/linear_stigma_donate_by_label.jpg", width = 8, height = 6, units = "in")
+
+```
+
+### Correlation between stereotype and donate_1
+
+```{r}
+#| label: correlation-stereotype-donate
+
+# Pearson correlation between stereotype and donate_1
+cor_stereotype_donate <- cor.test(data_main_recode$stereotype_avg, data_main_recode$donate_1, method = "pearson")
+
+cor_stereotype_donate
+```
+
+```{r}
+#| label: fig-linear-stereotype-donate
+#| fig-show: hold
+
+# Linear regression plot: stereotype and donate_1
+linear_stereotype_donate <- ggplot(data_main_recode, aes(x = stereotype_avg, y = donate_1)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Linear Regression Plot of Stereotype and Donate_1",
+    x = "Stereotype Score",
+    y = "Donate_1") +
+  theme_minimal()
+
+linear_stereotype_donate
+```
+
+```{r}
+#| label: correlation-stereotype-donate-by-label
+
+##### Simple Slope Analysis ##########
+
+# Pearson correlation between stereotype and donate_1 by label
+cor_stereotype_donate_by_label <- data_main_recode %>%
+  group_by(label) %>%
+  summarise(cor_stereotype_donate = cor(stereotype_avg, donate_1, method = "pearson"))
+
+cor_stereotype_donate_by_label
+
+##### Hierarchical Linear Regression ##########
+
+# Center stereotype_avg
+data_main_recode_scale_stereotype <- data_main_recode %>%
+  mutate(stereotype_avg_c = scale(stereotype_avg, center = TRUE, scale = FALSE))
+
+# Run Moderation Analysis
+moderation_model_stereotype <- lm(donate_1 ~ stereotype_avg_c * label, data = data_main_recode_scale_stereotype)
+
+# Display results
+summary(moderation_model_stereotype)
+```
+
+```{r}
+#| label: fig-linear-stereotype-donate-by-label
+#| fig-show: hold
+
+# Linear regression plot: stereotype and donate_1 by label
+ggplot(data_main_recode, aes(x = stereotype_avg, y = donate_1, color = factor(label))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Moderation Effect of Label Condition on Stereotype-Donation Relationship",
+       x = "Stereotype",
+       y = "Donation",
+       color = "Label Condition") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+

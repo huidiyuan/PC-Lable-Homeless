@@ -452,7 +452,7 @@ Stigma and stereotype are positively correlated (r = 0.45, p \< 0.001).
 
 ```{r}
 # Pearson correlation between stigma and donate_1
-cor_stigma_donate <- cor.test(data_main_recode$stigma_avg, data_main_recode$donate_1, method = "spearman")
+cor_stigma_donate <- cor.test(data_main_recode$stigma_avg, data_main_recode$donate_1, method = "pearson")
 
 cor_stigma_donate
 ```
@@ -461,9 +461,13 @@ cor_stigma_donate
 
 ```{r}
 # Pearson correlation between stereotype and donate_1
-cor_stereotype_donate <- cor.test(data_main_recode$stereotype_avg, data_main_recode$donate_1, method = "spearman")
+cor_stereotype_donate <- cor.test(data_main_recode$stereotype_avg, data_main_recode$donate_1, method = "pearson")
 
 cor_stereotype_donate
+```
+
+```{r}
+
 ```
 
 ## Analysis - Multinomial Logistic Regression
@@ -746,6 +750,14 @@ donate_age_cor <- cor.test(data_main_political_demo$donate_1, data_main_politica
 
 donate_age_cor
 
+# Linear regression graph of donation by age
+ggplot(data_main_political_demo, aes(x = demo_age, y = donate_1)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Donation by Age",
+       x = "Age",
+       y = "Donation")
+
 # predict donation by age, label, and political_social using
 donate_age_label_politic_lm <- lm(donate_1 ~ demo_age + label.x + political_social_con, data = data_main_political_demo)
 summary(donate_age_label_politic_lm)
@@ -754,10 +766,42 @@ summary(donate_age_label_politic_lm)
 donate_age_label_politic_lm <- lm(donate_1 ~ demo_age + label.x + label.x*demo_age, data = data_main_political_demo)
 summary(donate_age_label_politic_lm)
 
+# Pearson correlation between age and donation by political_social_con
+cor_age_donate_by_poli <- data_main_political_demo %>%
+  group_by(label.x) %>%
+  summarise(cor_age_donate = cor(demo_age, donate_1, method = "pearson"))
+
+age_donate
+
+
+
 # stigma correlation with age
 stigma_age_cor <- cor.test(data_main_political_demo$stigma_avg, data_main_political_demo$demo_age, method = "pearson")
 
 stigma_age_cor
+
+# Pearson correlation between age and stigma by label
+cor_age_stigma_by_label <- data_main_political_demo %>%
+  group_by(label.x) %>%
+  summarise(cor_age_stigma = cor(demo_age, stigma_avg, method = "pearson"))
+
+cor_age_stigma_by_label
+
+# Run Moderation Analysis
+moderation_model_stereotype <- lm(stigma_avg ~ demo_age * label.x, data = data_main_political_demo)
+
+summary(moderation_model_stereotype)
+
+# Linear regression graph of stigma versus age by label
+ggplot(data_main_political_demo, aes(x = demo_age, y = stigma_avg, color = label.x)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Stigma by Age and Label",
+       x = "Age",
+       y = "Stigma") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
 
 # predict stigma by age, label, and political_social
 stigma_age_label_politic_lm <- lm(stigma_avg ~ demo_age + label.x + political_social_con, data = data_main_political_demo)
