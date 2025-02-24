@@ -1,0 +1,83 @@
+---
+title: "Result Report: Label Effects on Perceptions and Behaviors Toward Unhoused Individuals"
+# If blank, the running header is the title in upper case.
+shorttitle: "Label Effects and Homlessness"
+# Set names and affiliations.
+# It is nice to specify everyone's orcid, if possible.
+# There can be only one corresponding author, but declaring one is optional.
+author:
+  - name: Huidi Yuan
+    affiliation: "University of Chicago"
+abstract: "This study investigates how inclusive labels, compared to stigmatizing terms, shape public perceptions and prosocial behaviors toward unhoused individuals. Drawing on theories of labeling and stigma, we hypothesized that person-centered labels (e.g., “people experiencing housing insecurity”) would reduce stigma and stereotypes (H1) and increase donations (H2). A preregistered online experiment with 400 U.S. adults tested these hypotheses using a between-subjects design. Participants viewed materials referencing either “the homeless” (stigmatizing label) or “people experiencing housing insecurity” (inclusive label). Results supported H1: PC labels significantly reduced stigma and negative stereotypes. However, H2 was unsupported, as donations did not differ between conditions. Stigma negatively correlated with donation amounts, but stereotypes showed no relationship. Exploratory analyses found no moderation by political orientation or age. These findings highlight the potential of PC labels to mitigate stigma, though additional strategies are needed to bridge the gap between attitudinal and behavioral change. Implications for advocacy, policy communication, and future research are discussed."
+# Put as many keywords at you like, separated by commmas (e.g., [reliability, validity, generalizability])
+keywords: [Inclusive Language, stigma, homelessness, prosocial behavior, labeling effects]
+# Suppress author note
+suppress-author-note: true
+# If true, tables and figures are mingled with the text instead of listed at the end of the document.
+floatsintext: true
+# Numbered lines (.pdf and .docx only)
+numbered-lines: false
+# File with references
+bibliography: PC_Label_Homeless_Reference.bib
+# Suppress title page
+suppress-title-page: false
+# Link citations to references
+link-citations: true
+# If true, adds today's date below author affiliations. If text, can be any value.
+# This is not standard APA format, but it is convenient.
+# Works with docx, html, and typst. 
+draft-date: false
+# Language options. See https://quarto.org/docs/authoring/language.html
+lang: en
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-typst: 
+    keep-typ: true
+  apaquarto-pdf:
+    # Can be jou (journal), man (manuscript), stu (student), or doc (document)
+    documentmode: man
+    keep-tex: true
+execute:
+  echo: false # set global chunk options: Show output only
+  warning: false # override these in individual chunks
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# Source library R script
+source("06_New_Codes/library.R")
+
+```
+
+```{r}
+#| label: data-load
+#| include: false
+
+# Read data
+data_deidentify <- read.csv("data_deidentify.csv")
+
+view(data_deidentify)
+```
+
+```{r}
+#| label: data-cleaning-separate-demo
+
+# Separate demographics
+data_demo <- data_deidentify %>%
+  select(ppt_ID, 
+         label,
+         starts_with("Demo_"), 
+         comment
+         )
+
+write.csv(data_demo, "data_demo.csv", row.names = FALSE)
+```
+
+```{r}
+
+```
+
+# Result

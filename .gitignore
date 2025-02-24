@@ -49,7 +49,7 @@ po/*~
 rsconnect/
 
 # Images folder
-09_Images/
+99_Images/
 
 ######################
 ### Original Data #### 
@@ -57,7 +57,7 @@ rsconnect/
 99_Original_Data/
 
 # Working data
-08_Working_Data_Backup/
+99_Backup_Data/
 
 ######################
 ##### Off Topic ######

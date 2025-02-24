@@ -85,6 +85,13 @@ data_passed1 <- data_passed %>%
            pc_label
            )) %>%
   mutate(ppt_ID = row_number())
+
+# Deidentify prolific ID
+data_deidentify <- data_passed1 %>%
+  select(-Prolific_ID)
+
+# Save the deidentified data
+write.csv(data_deidentify, "data_deidentify.csv", row.names = FALSE)
 ```
 
 ```{r}
