@@ -1,400 +1,400 @@
-"ppt_ID","Prolific_ID","label","demo_age","demo_gender","demo_education","demo_income","comment"
-1,"66573c811d17794993965781","people who experience housing insecurity","24","2","2","3",NA
-2,"658121a04136c30adcc5c7ad","the homeless","52","1","2","3",NA
-3,"67113167abb272a9a5defc3f","people who experience housing insecurity","26","2","5","4",NA
-4,"6690a9a3ac6ca29d3ed7f317","people who experience housing insecurity","33","2","5","3",NA
-5,"6747bb4b92d0b9e4495853c0","the homeless","21","1","5","1",NA
-6,"60b98567e2d17c3d44747f61","the homeless","34","2","3","2",NA
-7,"5f8164fb7caf8a20cfb083d2","the homeless","53","2","5","2",NA
-8,"631ab79e8635a1df26319958","the homeless","20","1","2","1",NA
-9,"66ee186efc9a208ef9446a30","people who experience housing insecurity","28","1","5","3",NA
-10,"641a43f78351cc4fefe31190","people who experience housing insecurity","49","2","3","3","no"
-11,"663b9711eeaf86f66ab2d784","the homeless","38","2","4","4",NA
-12,"60cfdcfdf8a3c6c42dad17d3","the homeless","26","2","2","3",NA
-13,"5a5c23afe0cf3d0001268781","the homeless","27","2","6","3",NA
-14,"570c12b272a70300085136c9","people who experience housing insecurity","35","2","5","4",NA
-15,"607897a566b792397d974201","the homeless","55","2","3","1",NA
-16,"662004840cf5731b955a2d0f","people who experience housing insecurity","38","2","3","3",NA
-17,"58eb85d75be00100013a6721","people who experience housing insecurity","47","2","3","3",NA
-18,"6514d739f7568fe6b2ebbe35","people who experience housing insecurity","28","2","5","3","No"
-19,"5e13ad514c81b2a01ae4aa9f","the homeless","37","2","5","2",NA
-20,"663a5cd0bcf23c7ec78e5f34","people who experience housing insecurity","20","2","2","2",NA
-21,"5bb3d470a1aed700011f6575","people who experience housing insecurity","37","2","3","2",NA
-22,"614f95fdc3c3e5b08fd0c60a","people who experience housing insecurity","58","2","5","4",NA
-23,"67555e10bbb6e43e6bdff58a","the homeless","24","1","5","1",NA
-24,"60fd88c5b5da4621ddaed661","the homeless","28","2","6","4",NA
-25,"6679f7b02d9db76da6adb38c","people who experience housing insecurity","56","2","5","5",NA
-26,"5d50feca50bdcf0001e8d38a","the homeless","29","2","4","2",NA
-27,"6661bcc158fd04df24b4983c","the homeless","23","2","3","3","Thank you for letting me participate!"
-28,"5bd06dfc93c2130001c70c68","people who experience housing insecurity","38","2","4","3",NA
-29,"672f0bc51dcdd7fd05d5a26b","people who experience housing insecurity","40","1","2","3",NA
-30,"5fa1636a77c875235bd8e1f6","people who experience housing insecurity","29","1","3","3",NA
-31,"5d5b4ffc1a12e70018ca1268","the homeless","41","2","3","4",NA
-32,"6736f625c22752088f9b5c7b","people who experience housing insecurity","23","1","6","4","The survey was amazing"
-33,"6694137cfb0ada0cb10c9866","people who experience housing insecurity","64","1","7","4",NA
-34,"660b2346862ff2a3da9cfe3e","people who experience housing insecurity","43","2","3","3",NA
-35,"66b65a98fd042ac5bf7e0194","the homeless","40","2","5","4",NA
-36,"5b6482e9f5bc0a00019fd571","the homeless","44","1","5","5",NA
-37,"6101ca2b4ef4ff44381fe3cd","the homeless","36","1","2","2",NA
-38,"66ae5078385c624dacb13934","the homeless","48","2","6","4",NA
-39,"5c5f95cf4fff5700017ecc6b","people who experience housing insecurity","28","2","5","1",NA
-40,"65676fba8308e02bbd3675bf","the homeless","31","1","5","3",NA
-41,"6748948406c6566b7aa3e9e3","people who experience housing insecurity","62","2","2","2",NA
-42,"63e52076fc677ee3ccce9a4d","the homeless","32","2","3","3",NA
-43,"66759f09781e25aaf1ebf081","the homeless","28","2","5","2",NA
-44,"672e8463992251062c8cf7cd","people who experience housing insecurity","46","2","5","2",NA
-45,"5f048fdc0aea5b0ae3215fc9","people who experience housing insecurity","67","2","2","1","NO questions but very important study. Thank you"
-46,"672cfb8a7481be6b76802732","people who experience housing insecurity","33","1","5","4",NA
-47,"6644cd2538b07b2b6aaa4376","the homeless","26","2","3","4",NA
-48,"614a8c315301f6c3b736a6d3","the homeless","32","1","4","3",NA
-49,"604a7e9f84bf0e7937200df5","the homeless","30","1","3","1","Political correctness is a plague on the human soul."
-50,"671c665e8952388dda52eb19","the homeless","46","1","5","4",NA
-51,"5a94d24fb5e2110001c689b5","the homeless","63","2","2","3",NA
-52,"5a65daf2c0d836000107d1ba","the homeless","43","2","3","1",NA
-53,"670869f2f0363c81b03a898a","people who experience housing insecurity","44","1","5","4","good"
-54,"5eb6b8ee9351615bd9d99fde","the homeless","67","2","5","4",NA
-55,"673ff0126ee627d740f53962","the homeless","21","2","4","4","N/A"
-56,"663d25db4f9b03e375910738","people who experience housing insecurity","33","2","6","3",NA
-57,"67535e949e35b5cb05403981","people who experience housing insecurity","24","1","6","1","No"
-58,"5904f5ca56cdc40001bc5629","people who experience housing insecurity","34","1","5","3",NA
-59,"669a89205aeba9e78499b3b6","the homeless","22","2","5","4","this very educational"
-60,"5a440abd1ba496000102a238","the homeless","42","1","5","4",NA
-61,"5890f7dd4ac8c200013e0e1c","the homeless","34","1","3","1",NA
-62,"5b915c9d22d85d000115c0f5","the homeless","39","2","5","3",NA
-63,"6234866ad5f13fac2a5cf725","the homeless","52","2","3","3",NA
-64,"5edf975930f30b270a6d90c7","people who experience housing insecurity","27","1","5","3",NA
-65,"5fa0d1a1e40401160ec4a011","people who experience housing insecurity","18","1","3","4",NA
-66,"672fdf4db87e3dbfce7307e5","people who experience housing insecurity","25","1","5","4","more studies"
-67,"5fdac85f90a6137a11b4a415","the homeless","37","2","4","4",NA
-68,"671eb59b6d79e6ca34bde67b","people who experience housing insecurity","38","2","5","3",NA
-69,"631b66847990076d05887914","people who experience housing insecurity","39","1","2","3","No comment"
-70,"673db17d5d5612c8cfd7e7b9","the homeless","46","2","3","1",NA
-71,"668413919a74e2d4d90ce80f","the homeless","55","2","5","2",NA
-72,"67273f4171f43599635eb133","the homeless","26","1","5","3",NA
-73,"64fb3be137d2bd2bdfab8ba6","people who experience housing insecurity","74","1","5","2",NA
-74,"58462977d2be990001174ae3","people who experience housing insecurity","57","1","5","2","I didn't notice any errors or typos and had no issues at all, thank you!"
-75,"66b123d3c5b7eea8d9120bde","people who experience housing insecurity","28","2","3","2","I do not."
-76,"672298d38faba7cd4fdf3679","people who experience housing insecurity","24","2","5","3",NA
-77,"66d1ce0afb3bac7960f79690","the homeless","23","1","3","4",NA
-78,"6660f49d0e4ea1b1aa324bf1","the homeless","64","2","2","1",NA
-79,"5a5aa9dcac5624000153e6f6","people who experience housing insecurity","39","2","2","3",NA
-80,"61700ceea50b32716181325c","the homeless","25","2","2","1",NA
-81,"650ba232969148996aaa66c9","people who experience housing insecurity","29","2","2","2",NA
-82,"63d0293ea72094f49357ebe6","the homeless","41","1","3","1","none"
-83,"64d91e8194411a7a62506acc","people who experience housing insecurity","52","2","5","4",NA
-84,"66946e3054a30a2bf5b1be40","people who experience housing insecurity","20","2","5","3",NA
-85,"66328ce540c3fb0ae0fddc6a","the homeless","49","2","6","4",NA
-86,"66465afcd7be26227a70ea74","the homeless","36","2","6","3",NA
-87,"6332517a492e9ac48804f991","people who experience housing insecurity","67","1","3","2",NA
-88,"663aa2e05fce0a3f19211ddf","the homeless","30","2","5","3",NA
-89,"667196e97423e7565c192fb8","people who experience housing insecurity","33","1","5","3","No comment"
-90,"662bfda7bb2d2c60655f3c40","people who experience housing insecurity","57","2","4","2",NA
-91,"5d09895e65eb3400189cc207","the homeless","39","2","3","2","no"
-92,"650b165cc7166c1d62c704e4","people who experience housing insecurity","56","1","3","1",NA
-93,"67087d6aa71b4d34bb7bf4ed","the homeless","47","2","5","4",NA
-94,"673975b28e34e02e399ae0b8","people who experience housing insecurity","19","2","2","4",NA
-95,"5f9fdfd04296cb0102563f84","people who experience housing insecurity","35","1","3","1",NA
-96,"6711b28847a20cf7e673127d","the homeless","23","2","5","3",NA
-97,"666cad20b467bfec0cc373a9","people who experience housing insecurity","29","2","2","3","Thank you for the opportunity!"
-98,"62e2b8add7bff03a91d78162","people who experience housing insecurity","31","1","5","2",NA
-99,"67305d3ce01ff7a29658bb3f","the homeless","22","2","5","3",NA
-100,"659d45dc6c58e90d809a6414","the homeless","29","2","5","2",NA
-101,"65c11389b0d2ba8e63cb8b22","the homeless","38","2","3","2",NA
-102,"652898fb226b244735680703","the homeless","46","2","6","3",NA
-103,"558aab19fdf99b65685f0142","people who experience housing insecurity","37","2","5","3","Best wishes. Everything was great."
-104,"6741ce8667002c96f0362d34","the homeless","37","2","6","3",NA
-105,"5f73610089f920075dbb129b","people who experience housing insecurity","37","2","2","1",NA
-106,"5b5ed13b6b2559000177ed34","people who experience housing insecurity","36","1","3","2",NA
-107,"5c6f906672c0e50001d9332a","the homeless","32","1","6","5",NA
-108,"668ec75042d29bd6e39f4a16","people who experience housing insecurity","19","1","2","4",NA
-109,"60fcf6b8fcdfa822c55aaed7","the homeless","22","2","5","3",NA
-110,"55afbe52fdf99b4099d57214","people who experience housing insecurity","41","2","5","3",NA
-111,"6236fe0ee063333a3e1ba72a","the homeless","25","2","3","2",NA
-112,"60fbe1b28e457c556359f8d0","people who experience housing insecurity","23","2","5","1",NA
-113,"63e51bca9f87294437c3cbb8","the homeless","33","1","6","4",NA
-114,"661e05f2473f43cc8d8c13b3","people who experience housing insecurity","25","1","2","1",NA
-115,"66ad1a1dc6fc1d8c672a0a9a","the homeless","32","1","2","2",NA
-116,"5beb92fbe0a3940001543d8c","the homeless","61","2","5","3",NA
-117,"66c3d2cfe269ff14a61b48b6","the homeless","22","2","5","3",NA
-118,"5f9ad972c3a1dd24704dd558","people who experience housing insecurity","37","2","5","4",NA
-119,"640132934d00561d78518c4c","the homeless","40","2","3","1",NA
-120,"66bdf79c29a4dd71ff4de0d0","people who experience housing insecurity","29","2","5","4",NA
-121,"66565e1d30bac7721173f5f0","people who experience housing insecurity","43","2","5","3",NA
-122,"67190ab10e22cad7919e130c","people who experience housing insecurity","61","1","5","3",NA
-123,"66f3011b6ef5575e593d6865","the homeless","46","2","4","4",NA
-124,"617612aa86abe09e0c69b7f2","the homeless","28","1","2","2",NA
-125,"6632a7976ac65354ad468c94","people who experience housing insecurity","28","2","5","4",NA
-126,"6400dc9f84ed19aeedc1a2cc","people who experience housing insecurity","27","1","2","1",NA
-127,"6595f3373adc1905f775babb","people who experience housing insecurity","21","2","3","3",NA
-128,"5d5af833f35ed70001e17a5c","people who experience housing insecurity","30","1","5","4",NA
-129,"663e7500449ebc055cb545ca","the homeless","32","1","3","3",NA
-130,"60fccabe1cf36a397867de16","the homeless","25","1","5","3",NA
-131,"5e2d295390840b3279624b90","people who experience housing insecurity","73","2","5","2",NA
-132,"67292f2bfc54541dd44f44f4","the homeless","58","2","6","2",NA
-133,"5dfdc45e617219a8e2e05c26","people who experience housing insecurity","28","1","4","2",NA
-134,"5fdee4d96a36576ca62e4518","the homeless","48","1","5","3",NA
-135,"60e9e8092cfc1f464753dd71","people who experience housing insecurity","61","1","5","3",NA
-136,"65d7665304b00afb2dfacb96","people who experience housing insecurity","46","1","5","4",NA
-137,"5c0f500787e876000151fc5f","the homeless","45","1","3","1",NA
-138,"6651193f302387e52405119a","people who experience housing insecurity","27","1","3","3",NA
-139,"5d6ef023cfe0a400198f911e","the homeless","35","1","5","3",NA
-140,"6751d0f2f302d2989fa7ef13","the homeless","30","1","5","3",NA
-141,"67516aedb3d03eec5afcee94","the homeless","21","2","6","4","none"
-142,"55b90235fdf99b26070d7663","the homeless","44","2","6","4",NA
-143,"6734fa1ab2c7c6f84827f814","the homeless","26","3","6","4",NA
-144,"5f7de4f1a739bc02a914fa37","people who experience housing insecurity","38","2","5","3",NA
-145,"671fae2215cb796cfc9d1207","people who experience housing insecurity","50","2","4","3",NA
-146,"5ee142b292607215593aa9af","the homeless","56","2","5","4",NA
-147,"590f89c75cad260001603033","the homeless","45","1","3","1",NA
-148,"665e13453c02a3bddea07cfd","the homeless","21","2","3","2",NA
-149,"6165a91cfe487d469c4242fd","people who experience housing insecurity","45","1","2","1","Very interesting, thanks for asking my opinions. Have a great afternoon."
-150,"63483c4522d65d46028da7a7","the homeless","34","1","5","4",NA
-151,"6413579319caf161f0515530","people who experience housing insecurity","23","2","5","2",NA
-152,"60e36e6ecb9f00e7b4dab92e","people who experience housing insecurity","69","1","3","3",NA
-153,"62c5dc08e00a823760c8196d","the homeless","37","1","3","2","Enjoyed it thanks!"
-154,"673cc5ee63dedf9360d8677c","the homeless","34","2","6","4","N/A"
-155,"67223e6670f9334cc761eb99","the homeless","30","2","3","4",NA
-156,"62df7fc27c9e824a7a774103","the homeless","41","1","5","3",NA
-157,"66621dc2ec23614444716d2c","people who experience housing insecurity","28","2","2","1",NA
-158,"66bc038a785af1a7e20589eb","the homeless","52","2","4","2","No"
-159,"67363345a47584d37736465c","people who experience housing insecurity","24","1","5","3",NA
-160,"63fa6f8dc3d4ec40b5397847","people who experience housing insecurity","70","2","5","4",NA
-161,"63cee08c60670525b4f43946","people who experience housing insecurity","34","2","5","1",NA
-162,"66d9b6042ad7fd7890e06ae5","the homeless","47","2","5","5",NA
-163,"674f4ca46cabdebe0426eb0b","the homeless","26","1","5","1",NA
-164,"65edddac674b5980782246d4","the homeless","41","2","5","4","thank you"
-165,"6131ed11a918100d4f4a2452","the homeless","25","2","3","3",NA
-166,"66ad331d683af19852a9a424","people who experience housing insecurity","45","1","6","4","I am liberal but I do find political correctness to be a bit much at times. I don't mean any ill will when using outdated terms. It is what I grew up with so it is almost like muscle memory. I think what I am saying is give some grace to people who may not always be politically correct. They are probably empathetic and want to help, but chastising their vocabulary is not a good method to bring about change."
-167,"671cffb763e930a72f25f1db","the homeless","30","2","5","4",NA
-168,"5c3272172f0f3500010284c0","people who experience housing insecurity","36","2","3","2",NA
-169,"65f0e572d1ca00e646860bff","people who experience housing insecurity","32","3","3","1","Thanks"
-170,"5d88dcb723dfcc00151fd043","people who experience housing insecurity","64","2","2","3","Thank you! Have a great week"
-171,"5ceebf1f1374500001070a35","people who experience housing insecurity","55","2","3","3",NA
-172,"66d06c3fdcae42c0e5f06b45","people who experience housing insecurity","37","1","5","3","No comment"
-173,"65c6c2ba75830293a68fe774","the homeless","78","2","5","4",NA
-174,"616b44e7e3e9cd8e26040a3a","people who experience housing insecurity","22","1","3","1",NA
-175,"6708835d0b617b621152e4fb","the homeless","35","2","5","4","good"
-176,"6733df9d5367467ccd9381e0","the homeless","28","2","6","3",NA
-177,"5f57c697f9f7d02d07909dbb","the homeless","55","2","2","3",NA
-178,"66d63c17985c822b67585b28","people who experience housing insecurity","36","2","5","2",NA
-179,"60e49c6274c1be146fa85140","the homeless","32","2","6","4",NA
-180,"5b81e0a72ce68d0001fa68d5","people who experience housing insecurity","46","2","5","4",NA
-181,"62f8f9a33bc7d6d2915ea840","the homeless","33","1","4","3","Everything worked as intended."
-182,"5a01ddf3728b1b0001ad8ad0","the homeless","31","2","5","3","None"
-183,"650917227df766f0de543c1c","the homeless","38","1","6","4",NA
-184,"6647d407ef73569bbe52518c","people who experience housing insecurity","28","1","2","2",NA
-185,"5e08bbbafeea891c97523e87","people who experience housing insecurity","30","2","5","4",NA
-186,"66a66702e594fac728e89a93","people who experience housing insecurity","36","2","3","3",NA
-187,"56721761980a3c0011277389","the homeless","52","2","4","3",NA
-188,"60906c79f8cfd718d6dcb3df","people who experience housing insecurity","36","1","4","3",NA
-189,"6726307cbac822f17bcdc781","the homeless","24","1","5","3","No further comments, thank you."
-190,"665bc3c447bdecc4b77379fa","people who experience housing insecurity","50","2","5","3",NA
-191,"64077ddd11208afe2bec171a","the homeless","29","1","2","2",NA
-192,"663e4c000f13ed12bc94bc41","the homeless","37","2","5","3",NA
-193,"66ba5e1536b184eb208686a3","people who experience housing insecurity","55","2","3","3",NA
-194,"6658cc3fe945182d30f9fdc8","the homeless","35","2","5","2","no"
-195,"66837515eaf084da1f1d8fc0","the homeless","40","2","5","3",NA
-196,"644c0e49c7aebcba935aa09d","the homeless","59","2","5","2",NA
-197,"6111587a8000027e7f79b1ba","people who experience housing insecurity","24","2","4","3",NA
-198,"5d4c7d1a2a25e5000114cf3b","people who experience housing insecurity","60","2","3","1",NA
-199,"63d97656f4c5e18d8889afcc","people who experience housing insecurity","38","1","5","3",NA
-200,"6644ba9c868c5e3ef67f56db","the homeless","29","2","6","3",NA
-201,"66ef212cf79668f34be612d8","people who experience housing insecurity","32","2","5","4",NA
-202,"664423f62228d52a75ce239c","people who experience housing insecurity","36","2","4","2",NA
-203,"669d6d17eeff48e26e8de5d1","people who experience housing insecurity","36","1","5","3",NA
-204,"667231cd239aa2c8d48ea1b8","the homeless","33","1","6","4",NA
-205,"669177c4a26127b08bc038ee","the homeless","25","1","5","3",NA
-206,"6530359834d591f5e70fab8a","people who experience housing insecurity","71","2","3","2","Thank you for this study."
-207,"5a9dd8b1873cda00010d18c5","people who experience housing insecurity","30","2","3","3",NA
-208,"6518a78ee94831275dd1c0e1","the homeless","57","2","3","1",NA
-209,"673ccb342b4caa71a4eca62b","the homeless","20","2","2","2",NA
-210,"606bbaff0237383d72ae9381","the homeless","21","1","2","3",NA
-211,"66371cc4de71aac65b5f1980","people who experience housing insecurity","41","2","5","2",NA
-212,"65980f73048d02626828cd2c","people who experience housing insecurity","42","2","4","3",NA
-213,"59c65eb83306be000195bb01","people who experience housing insecurity","78","1","5","4",NA
-214,"641385c88f29eb3264283818","people who experience housing insecurity","59","1","6","1",NA
-215,"6727df56b0a36aba8a97d077","the homeless","46","2","5","4",NA
-216,"6664cf7fbe52905a784f4cad","people who experience housing insecurity","50","1","5","3",NA
-217,"66a3d4fafbd20e8283f73c46","the homeless","22","1","5","1",NA
-218,"5d6466d84e9aae0001598a5a","the homeless","38","2","2","2",NA
-219,"67548ca45cb1b10de7b20fbe","the homeless","18","1","3","1",NA
-220,"6741d7873ed0456083bd2ff6","people who experience housing insecurity","23","2","5","3",NA
-221,"671147ad39e535ca7acd03e9","the homeless","21","2","2","2",NA
-222,"6723a0785ead80729674d7ed","people who experience housing insecurity","30","2","5","3",NA
-223,"675740a6d070d625e54eb0b9","people who experience housing insecurity","24","1","5","3",NA
-224,"66c5fd9cd88ff2690f682cec","people who experience housing insecurity","58","2","6","2",NA
-225,"663e638df48d765486d59a0f","the homeless","36","2","5","2","None. Thanks!"
-226,"6500b20399acf445cba1272f","people who experience housing insecurity","52","2","3","4","Thank you for this survey.  Every little bit earned ensures I am able to remain housed."
-227,"63f79204eb27c9dc523185d9","people who experience housing insecurity","36","1","2","2",NA
-228,"663269ffb3bd651c4a82d843","the homeless","45","2","3","3",NA
-229,"670ff0048daf2fe269643a91","people who experience housing insecurity","27","1","5","3","There may be typo on the donation page; the word ""donation"" is spelled ""nodation"" at the bottom of the page. Other than that, I had no technical issues or confusion."
-230,"67360fb907f171e6349454c7","the homeless","38","2","5","4",NA
-231,"610840262cce4d0594be48d0","people who experience housing insecurity","28","2","2","2",NA
-232,"67448d0fa03f7d4364230d5d","the homeless","38","1","2","3",NA
-233,"62fedd1d5abea42a4a58a82a","people who experience housing insecurity","30","1","5","5",NA
-234,"66aa73665f7ce78a2f91cc3b","the homeless","34","2","2","2","no"
-235,"6685b8b4e5f74b3a1d405b21","people who experience housing insecurity","51","2","3","4",NA
-236,"63d570d979c31656fece7c7d","people who experience housing insecurity","65","1","3","1","Very interesting exercise!"
-237,"6662afa1ff316ccbd155127f","people who experience housing insecurity","36","2","3","2",NA
-238,"5eeaff28cf5da71d691ef212","the homeless","25","1","5","3",NA
-239,"5e50cf2e6f8390111edd6211","the homeless","43","2","3","3",NA
-240,"66b7e1b1744cb27ea4e73916","the homeless","61","2","4","3",NA
-241,"64e275237a4db6f6038b40f4","people who experience housing insecurity","49","2","6","3",NA
-242,"666e22b9f402bdcbd6099737","people who experience housing insecurity","43","1","6","4",NA
-243,"5ffda81386912d2e220663d6","the homeless","30","1","5","3",NA
-244,"67406d0213336716a03092c9","the homeless","23","1","6","4",NA
-245,"66cd2c8c84efe6e84fa88f1e","the homeless","33","1","5","3",NA
-246,"5ffd530863b06e2247f69652","the homeless","36","1","2","3","none"
-247,"66614c693d129e9d6e6bfa10","people who experience housing insecurity","24","2","4","2",NA
-248,"662be2908eae053580d4351b","the homeless","47","2","5","2","Thank you"
-249,"5c2ab2de9136140001b90737","people who experience housing insecurity","61","2","3","4",NA
-250,"6684bbcfad6facc374fd6523","people who experience housing insecurity","28","2","5","2",NA
-251,"673d725d9b7076ea013a00bc","the homeless","27","1","6","4","no"
-252,"663cfa07795619019d825ae6","people who experience housing insecurity","19","1","3","4",NA
-253,"66d3728a3990854e1d6e9939","the homeless","48","2","3","2","As the economic climate tightens, more and more people will become familiar with housing insecurity. This issue needs to be addressed."
-254,"66f08a7ef32da0b8eca514a0","the homeless","34","1","6","4","no"
-255,"66c9c512d0d3e1017fe38021","people who experience housing insecurity","30","2","5","4",NA
-256,"65ce90640fc477060a80dbc7","the homeless","26","2","6","1",NA
-257,"5c0e8c65a2f251000137e916","people who experience housing insecurity","61","2","4","1",NA
-258,"58016c9f551314000145af58","people who experience housing insecurity","32","2","4","1",":)"
-259,"6304dd79da5d4dcf5984e187","people who experience housing insecurity","38","2","3","2",NA
-260,"65e01ed82bf613ad0f3d1bf0","the homeless","61","2","5","1",NA
-261,"66f4390df2bca2eee3129f28","the homeless","37","2","5","2","nice study"
-262,"66ca352a54d092ab46f39f36","the homeless","36","2","5","3","The questions about politically correct language were a little tough to answer, because I think people would differ in what exactly that means. I think I prefer ""politically correct"" language if i genuinely believe it's more truthful or kind, but I tend to have a distaste for it otherwise"
-263,"600f4361d8ad4b1021236a24","the homeless","40","1","3","3",NA
-264,"6716fdd2981c67900bf61439","the homeless","40","1","5","5",NA
-265,"5e8bf957b7e6de0e5571b507","people who experience housing insecurity","44","2","5","3",NA
-266,"5e1f8fbfb202032c463f3e06","people who experience housing insecurity","63","2","5","3","no"
-267,"670e3e1821e1e62133cfe0a9","the homeless","45","2","6","4","I enjoyed my time taking the survey."
-268,"60859f820e5009a67adb3921","people who experience housing insecurity","56","2","5","4",NA
-269,"6715bc112785851334e0d1ac","people who experience housing insecurity","30","1","6","4",NA
-270,"6709d78383370accdbe49e22","people who experience housing insecurity","21","1","2","3","I wonder if you should define ""housing insecurity"". I didn't think it had any related meaning to ""homeless"" until the study started saying so."
-271,"674920f31516667cc3eb79d5","the homeless","44","2","6","3",NA
-272,"66df3765958d85046fc04903","the homeless","27","1","6","3",NA
-273,"66f4c07596eeff3662fa6178","the homeless","64","2","3","2","No thank you."
-274,"66fdb54ad5b9cae271746d45","the homeless","55","2","5","3",NA
-275,"6702f2952a6d8b5e12af5802","people who experience housing insecurity","46","1","5","4",NA
-276,"5dc12689c0621a0910906454","people who experience housing insecurity","66","2","4","2",NA
-277,"66857238414e10ff4b4c72d6","people who experience housing insecurity","47","1","5","4",NA
-278,"6679d012158715ae2d03a3f7","the homeless","79","2","4","1",NA
-279,"66797e76592771cdd0a5cd86","the homeless","26","4","5","1",NA
-280,"617452347986aeaf4d2e5278","the homeless","25","1","3","2",NA
-281,"654942f619e6c5c133407786","people who experience housing insecurity","56","2","5","1",NA
-282,"60a6f069396cebb99ad0c6a7","the homeless","68","1","5","3","none"
-283,"666de03524464d320a1da7c5","the homeless","27","2","2","3","Thank you!"
-284,"638e4ace1c4a380ecc49932f","people who experience housing insecurity","72","1","5","3",NA
-285,"5e2fda27a8f853576b85f537","the homeless","52","1","3","2","please put there is writing in the description on further studies. thank you."
-286,"5c97df1f9e1eff001662ed96","people who experience housing insecurity","31","2","5","4",NA
-287,"657f007d38e31904b66cc7ac","people who experience housing insecurity","52","2","5","3","N/A"
-288,"67542c8bc50ba6f21ac1d46c","the homeless","49","2","6","4",NA
-289,"66816b966ae4ada52898695c","people who experience housing insecurity","30","1","3","3",NA
-290,"6621daa87097db3620036531","the homeless","61","2","2","3","I believe I may have missed the attention check question. I initially accidentally left out the response just above the attention check and right when I clicked the arrow to move forward, I saw in the blink of an eye the attention check but it was too late to correct it. I really did pay attention to and answered the questions thoroughly."
-291,"6679e748c16abe5888509bf7","the homeless","30","2","2","1","This was a nice survey. Thank you :)"
-292,"61762d78247d96d4b4b6c132","people who experience housing insecurity","35","1","5","3",NA
-293,"67534778ff170cecc2303250","people who experience housing insecurity","48","1","6","4",NA
-294,"67534fde63fdbd0a960fbb7d","the homeless","38","1","6","4",NA
-295,"675410a4dc0c853401c107ee","people who experience housing insecurity","23","2","5","4",NA
-296,"665cc37706c5e959d6f680a3","people who experience housing insecurity","22","1","4","2",NA
-297,"668ebaf9398b153c583798f2","the homeless","22","1","3","2",NA
-298,"5e2926d80beb030ede110e67","the homeless","52","2","5","1",NA
-299,"6718f1b7c07818ce42f4cf0f","the homeless","21","1","5","3","None"
-300,"5ce4eea02210eb0017870791","the homeless","46","2","5","2",NA
-301,"62e70e152763c4635bc6ebb4","the homeless","59","1","4","3",NA
-302,"66873c06f948d147e72b2654","the homeless","50","2","6","3",NA
-303,"6750bb21bd8702c7e09a009f","people who experience housing insecurity","23","2","5","3",NA
-304,"674637aa5938f4f805e856ee","people who experience housing insecurity","31","1","5","5",NA
-305,"66579d2fff0ff4d2fa1488ff","the homeless","54","2","6","2","In the final question about knowing anyone who has experienced housing insecurity, I wasn't sure whether I should list my family (me, spouse, child) since we are living with family now, and would need financial assistance from others in order to get our own place. It is too scary and sad to think about, but we probably do fit into that category, all things being equal. By the time I decided that I had already clicked the next button and unable to go back and add it to my answer."
-306,"6747c6090f5f25c6041b592e","people who experience housing insecurity","19","1","2","4","none"
-307,"66911d63a206121d8bddc28b","the homeless","36","1","5","4",NA
-308,"65bcf630884d98c9ed27bf62","people who experience housing insecurity","41","1","3","2",NA
-309,"5df81cd72713055bdf02efd8","people who experience housing insecurity","45","1","5","4",NA
-310,"623a4d7294028cfe9638272f","people who experience housing insecurity","56","2","3","2",NA
-311,"5ea120ed66031912aea618ae","people who experience housing insecurity","50","1","5","1",NA
-312,"6643415888ef07b2fb48e9be","people who experience housing insecurity","38","2","3","2",NA
-313,"61075fc1e485661aaf80d2cb","people who experience housing insecurity","22","2","5","2",NA
-314,"63ba10de73415d047e1d6731","the homeless","51","2","5","3",NA
-315,"5adbbdf1cd58990001e46912","people who experience housing insecurity","53","1","4","1",NA
-316,"62dd9f33ad57b611f57ac39c","people who experience housing insecurity","50","1","6","4",NA
-317,"668c0ba61ad563eb5505b22a","people who experience housing insecurity","66","2","6","4",NA
-318,"63977b3438a0ebce6131d30a","people who experience housing insecurity","62","2","6","3","thank you for researching this subject"
-319,"66e0f316a0095cad21c39447","the homeless","54","1","1","4",NA
-320,"62d04f92bfa53e94ef2fabaf","people who experience housing insecurity","40","1","5","3","I've very recently experienced housing insecurity and having to depend on help from friends/family due to multiple layoffs from jobs and stress that came with it. Local social safety nets (like SNAP) weren't much help due to my local office having ""filing issues"" and postponing my benefits for months, so I also understand how easily help can fail those in need."
-321,"6732657c5bef2c439fa2f919","the homeless","28","3","2","1",NA
-322,"5d1855f26be726001a39cf9b","people who experience housing insecurity","25","3","5","2",NA
-323,"67275116b96416ddae4e1961","the homeless","25","1","6","4",NA
-324,"6501bb247a918443bb34fc33","the homeless","56","2","6","5","This was an interesting, thought-provoking study. Thank you!"
-325,"6666ce245418b25b3570725f","the homeless","55","2","5","2",NA
-326,"66114844b8efff4b2af276ec","people who experience housing insecurity","63","2","4","2",NA
-327,"6749d1b9c30fca401971e1be","the homeless","20","1","5","2","all good and educative. thank you"
-328,"66b664084d182549330946be","the homeless","78","1","6","4",NA
-329,"6730199370b7ac62cc67382b","people who experience housing insecurity","56","1","2","2",NA
-330,"672224d0d51d40508dc6d654","people who experience housing insecurity","23","1","6","4",NA
-331,"661d91cf9f3f83afa8e53a0d","people who experience housing insecurity","60","2","5","3","none right now, thank you!"
-332,"5c3d504ede04ad0001d8be54","people who experience housing insecurity","42","2","6","1","I'm not sure it's important, but my answers come from my 10 years of working in a nonprofit organization that served individuals and families experiencing homelessness. I was a Case Manager, Employment Specialist, and Grant Writer at the organization over 10 years."
-333,"67547b88d0072b4d21c49214","the homeless","23","1","2","3",NA
-334,"6682bf46c31795bcc4879d61","the homeless","29","1","5","3","no"
-335,"5aebb10baa05510001ff6500","the homeless","26","1","5","4",NA
-336,"6734bc5aff35703f1ad298e3","people who experience housing insecurity","19","2","5","3",NA
-337,"65fb2b6d968812efd360f8f7","people who experience housing insecurity","42","2","5","4",NA
-338,"5f2dfc9bcae87215c17d34d4","people who experience housing insecurity","25","2","3","1",NA
-339,"64499fee96893c7a3ec6b883","people who experience housing insecurity","75","1","6","3",NA
-340,"5884593bd920ed0001fdccb4","the homeless","42","1","2","1",NA
-341,"674752e088cb6d53b9bed152","people who experience housing insecurity","30","1","5","3",NA
-342,"66b6165f6fa7fd2a581c5a35","the homeless","43","1","4","3","Interesting study, thanks for letting me be a small part! I hate the idea of homelessness, and if I could wave a magic wand I would create housing for everyone in need. Reality is, most individuals who are experiencing this are doing so because of an underlying issue (such as alcohol or drub addiction)It is tragic, but we have to figure that portion of the issue out first to help with the actual homlessness"
-343,"66be4cf7adace93dd187ddc0","the homeless","33","2","5","4",NA
-344,"66e6e00d42f8b0c2ef2ed06a","people who experience housing insecurity","59","1","2","1",NA
-345,"67421919431195cd829a7e0a","the homeless","35","2","5","4",NA
-346,"66f0bcad545ecf68df970a46","the homeless","25","1","3","3","NO"
-347,"5d4254db5b2c430001418a3c","the homeless","41","2","3","3",NA
-348,"5ca749ff98b35f0001f7559d","the homeless","39","3","4","2","No comments"
-349,"5efaffccf90911000c95a3cb","the homeless","34","1","5","4",NA
-350,"66d0f4b6657cba5bf4f74ec8","the homeless","43","1","7","4","None"
-351,"6741b5bd22f2b01860bd4aac","people who experience housing insecurity","37","1","7","4",NA
-352,"66afdb90c44aecf894d3f276","the homeless","27","2","4","3","N/A"
-353,"6712d8f45f5cfb988ba2677b","the homeless","25","2","2","3",NA
-354,"6755dd941e8abe4946b2c6f0","the homeless","60","1","5","5",NA
-355,"671938f425a5e1a39ea32493","people who experience housing insecurity","27","1","3","2",NA
-356,"67445dfcda43bf94598ae5e0","people who experience housing insecurity","22","1","4","2","no please"
-357,"6754439592aef7e6be8c0ae7","people who experience housing insecurity","20","1","5","3",NA
-358,"5ed478fa7d20a043b7c3be83","people who experience housing insecurity","39","1","5","3",NA
-359,"66e7f6d53ba6a9294f672f88","people who experience housing insecurity","34","2","5","3",NA
-360,"673b69c4bbceab038f635c01","the homeless","21","2","5","3",NA
-361,"673c940c2ff800526b961e05","people who experience housing insecurity","28","1","6","4",NA
-362,"673de462cc369f34e34e650f","the homeless","21","1","5","4",NA
-363,"5dec17c87aeafe30634f55f7","people who experience housing insecurity","45","1","5","3","thanks"
-364,"65de5ddcc637719fe458fc76","people who experience housing insecurity","31","1","5","3",NA
-365,"67155947b83a6aee15acbc0d","people who experience housing insecurity","28","2","5","3","no"
-366,"5e48cc0fe4317f3670ce90dd","the homeless","77","2","3","1",NA
-367,"66a57cbc015a7ecc6e1751c8","the homeless","43","1","4","3",NA
-368,"5d2a7c01b866ef0015b8e0a1","people who experience housing insecurity","58","2","3","1","Thanks for allowing my participation in the study. Happy Holidays!"
-369,"5ef55b1c3395621b627d3ae9","the homeless","55","2","5","3",NA
-370,"6730ace4e72fe0e520e5b243","the homeless","29","1","5","3","I'm happy to help clarify any aspects or address any concerns you might have regarding the study on how labels affect perceptions of homelessness."
-371,"673b0e8aebb8a922af84109b","the homeless","33","2","5","3",NA
-372,"63643728a38eaad0e7a70ee4","the homeless","27","1","6","3",NA
-373,"67370aa61a1fd0d29b6ee860","people who experience housing insecurity","24","2","6","5","I enjoyed this survey and would love to take part more"
-374,"6749938deb5b83385813edaf","the homeless","43","1","5","4",NA
-375,"67432e074423d630c4914887","the homeless","25","1","5","1",NA
-376,"672ce0841dfa29f676e37b0f","people who experience housing insecurity","22","1","3","3","N/A"
-377,"60cd717e463162435e3b7d46","people who experience housing insecurity","41","2","6","3",NA
-378,"6581f44ccab6abf2c79a43fd","people who experience housing insecurity","39","2","5","4",NA
-379,"659c5fc05f434ae7674c6e93","people who experience housing insecurity","29","1","3","3","N/A"
-380,"67154ed73827aa319ac7fa2b","the homeless","28","1","6","4","no"
-381,"67533343c3a851ce61ebc3fe","people who experience housing insecurity","24","2","5","3",NA
-382,"59949236c825cf0001d7dcdc","people who experience housing insecurity","55","1","5","3",NA
-383,"63d8475556cf3cad39dd8417","the homeless","41","1","2","3",NA
-384,"6737228978f333308e56b2de","the homeless","27","1","6","5",NA
-385,"653fe3c58f4df4e625de57e2","people who experience housing insecurity","46","2","7","2",NA
-386,"66e70629ea7dab78f439f069","the homeless","46","1","6","4","no comment"
-387,"66af025ec0ae4b298c4e4ccc","the homeless","31","1","5","2",NA
-388,"63ea72a1db4b8d9938f2b0c4","the homeless","33","1","2","2",NA
-389,"6116cd3769f67b5fa5897cb6","people who experience housing insecurity","36","2","4","2",NA
-390,"67444968ba167993495c0e76","people who experience housing insecurity","49","2","6","4",NA
-391,"674841e51ddba29a9dee134e","people who experience housing insecurity","30","1","5","3",NA
-392,"5ff082234cfb7df5d6371e99","people who experience housing insecurity","39","2","5","3",NA
-393,"66e641a57e7f41866f9e705f","the homeless","32","1","5","3","Thank you!"
-394,"66dca29d14f4d3d03a07c762","people who experience housing insecurity","25","1","5","1",NA
-395,"663442d7d93b6a44b72baf84","the homeless","51","2","3","3","No, not at this time."
-396,"64dbb43e8bfa212e6da507e5","people who experience housing insecurity","52","1","2","2",NA
-397,"64401360c45f52531fde4aa6","people who experience housing insecurity","21","1","3","2",NA
-398,"657c5c308f36a3084ee2c7cd","people who experience housing insecurity","26","1","3","1",NA
-399,"67095387c465675aea460ef4","people who experience housing insecurity","51","1","5","5",NA
+"ppt_ID","label","demo_age","demo_gender","demo_education","demo_income","comment"
+1,"people who experience housing insecurity",24,2,2,3,NA
+2,"the homeless",52,1,2,3,NA
+3,"people who experience housing insecurity",26,2,5,4,NA
+4,"people who experience housing insecurity",33,2,5,3,NA
+5,"the homeless",21,1,5,1,NA
+6,"the homeless",34,2,3,2,NA
+7,"the homeless",53,2,5,2,NA
+8,"the homeless",20,1,2,1,NA
+9,"people who experience housing insecurity",28,1,5,3,NA
+10,"people who experience housing insecurity",49,2,3,3,"no"
+11,"the homeless",38,2,4,4,NA
+12,"the homeless",26,2,2,3,NA
+13,"the homeless",27,2,6,3,NA
+14,"people who experience housing insecurity",35,2,5,4,NA
+15,"the homeless",55,2,3,1,NA
+16,"people who experience housing insecurity",38,2,3,3,NA
+17,"people who experience housing insecurity",47,2,3,3,NA
+18,"people who experience housing insecurity",28,2,5,3,"No"
+19,"the homeless",37,2,5,2,NA
+20,"people who experience housing insecurity",20,2,2,2,NA
+21,"people who experience housing insecurity",37,2,3,2,NA
+22,"people who experience housing insecurity",58,2,5,4,NA
+23,"the homeless",24,1,5,1,NA
+24,"the homeless",28,2,6,4,NA
+25,"people who experience housing insecurity",56,2,5,5,NA
+26,"the homeless",29,2,4,2,NA
+27,"the homeless",23,2,3,3,"Thank you for letting me participate!"
+28,"people who experience housing insecurity",38,2,4,3,NA
+29,"people who experience housing insecurity",40,1,2,3,NA
+30,"people who experience housing insecurity",29,1,3,3,NA
+31,"the homeless",41,2,3,4,NA
+32,"people who experience housing insecurity",23,1,6,4,"The survey was amazing"
+33,"people who experience housing insecurity",64,1,7,4,NA
+34,"people who experience housing insecurity",43,2,3,3,NA
+35,"the homeless",40,2,5,4,NA
+36,"the homeless",44,1,5,5,NA
+37,"the homeless",36,1,2,2,NA
+38,"the homeless",48,2,6,4,NA
+39,"people who experience housing insecurity",28,2,5,1,NA
+40,"the homeless",31,1,5,3,NA
+41,"people who experience housing insecurity",62,2,2,2,NA
+42,"the homeless",32,2,3,3,NA
+43,"the homeless",28,2,5,2,NA
+44,"people who experience housing insecurity",46,2,5,2,NA
+45,"people who experience housing insecurity",67,2,2,1,"NO questions but very important study. Thank you"
+46,"people who experience housing insecurity",33,1,5,4,NA
+47,"the homeless",26,2,3,4,NA
+48,"the homeless",32,1,4,3,NA
+49,"the homeless",30,1,3,1,"Political correctness is a plague on the human soul."
+50,"the homeless",46,1,5,4,NA
+51,"the homeless",63,2,2,3,NA
+52,"the homeless",43,2,3,1,NA
+53,"people who experience housing insecurity",44,1,5,4,"good"
+54,"the homeless",67,2,5,4,NA
+55,"the homeless",21,2,4,4,"N/A"
+56,"people who experience housing insecurity",33,2,6,3,NA
+57,"people who experience housing insecurity",24,1,6,1,"No"
+58,"people who experience housing insecurity",34,1,5,3,NA
+59,"the homeless",22,2,5,4,"this very educational"
+60,"the homeless",42,1,5,4,NA
+61,"the homeless",34,1,3,1,NA
+62,"the homeless",39,2,5,3,NA
+63,"the homeless",52,2,3,3,NA
+64,"people who experience housing insecurity",27,1,5,3,NA
+65,"people who experience housing insecurity",18,1,3,4,NA
+66,"people who experience housing insecurity",25,1,5,4,"more studies"
+67,"the homeless",37,2,4,4,NA
+68,"people who experience housing insecurity",38,2,5,3,NA
+69,"people who experience housing insecurity",39,1,2,3,"No comment"
+70,"the homeless",46,2,3,1,NA
+71,"the homeless",55,2,5,2,NA
+72,"the homeless",26,1,5,3,NA
+73,"people who experience housing insecurity",74,1,5,2,NA
+74,"people who experience housing insecurity",57,1,5,2,"I didn't notice any errors or typos and had no issues at all, thank you!"
+75,"people who experience housing insecurity",28,2,3,2,"I do not."
+76,"people who experience housing insecurity",24,2,5,3,NA
+77,"the homeless",23,1,3,4,NA
+78,"the homeless",64,2,2,1,NA
+79,"people who experience housing insecurity",39,2,2,3,NA
+80,"the homeless",25,2,2,1,NA
+81,"people who experience housing insecurity",29,2,2,2,NA
+82,"the homeless",41,1,3,1,"none"
+83,"people who experience housing insecurity",52,2,5,4,NA
+84,"people who experience housing insecurity",20,2,5,3,NA
+85,"the homeless",49,2,6,4,NA
+86,"the homeless",36,2,6,3,NA
+87,"people who experience housing insecurity",67,1,3,2,NA
+88,"the homeless",30,2,5,3,NA
+89,"people who experience housing insecurity",33,1,5,3,"No comment"
+90,"people who experience housing insecurity",57,2,4,2,NA
+91,"the homeless",39,2,3,2,"no"
+92,"people who experience housing insecurity",56,1,3,1,NA
+93,"the homeless",47,2,5,4,NA
+94,"people who experience housing insecurity",19,2,2,4,NA
+95,"people who experience housing insecurity",35,1,3,1,NA
+96,"the homeless",23,2,5,3,NA
+97,"people who experience housing insecurity",29,2,2,3,"Thank you for the opportunity!"
+98,"people who experience housing insecurity",31,1,5,2,NA
+99,"the homeless",22,2,5,3,NA
+100,"the homeless",29,2,5,2,NA
+101,"the homeless",38,2,3,2,NA
+102,"the homeless",46,2,6,3,NA
+103,"people who experience housing insecurity",37,2,5,3,"Best wishes. Everything was great."
+104,"the homeless",37,2,6,3,NA
+105,"people who experience housing insecurity",37,2,2,1,NA
+106,"people who experience housing insecurity",36,1,3,2,NA
+107,"the homeless",32,1,6,5,NA
+108,"people who experience housing insecurity",19,1,2,4,NA
+109,"the homeless",22,2,5,3,NA
+110,"people who experience housing insecurity",41,2,5,3,NA
+111,"the homeless",25,2,3,2,NA
+112,"people who experience housing insecurity",23,2,5,1,NA
+113,"the homeless",33,1,6,4,NA
+114,"people who experience housing insecurity",25,1,2,1,NA
+115,"the homeless",32,1,2,2,NA
+116,"the homeless",61,2,5,3,NA
+117,"the homeless",22,2,5,3,NA
+118,"people who experience housing insecurity",37,2,5,4,NA
+119,"the homeless",40,2,3,1,NA
+120,"people who experience housing insecurity",29,2,5,4,NA
+121,"people who experience housing insecurity",43,2,5,3,NA
+122,"people who experience housing insecurity",61,1,5,3,NA
+123,"the homeless",46,2,4,4,NA
+124,"the homeless",28,1,2,2,NA
+125,"people who experience housing insecurity",28,2,5,4,NA
+126,"people who experience housing insecurity",27,1,2,1,NA
+127,"people who experience housing insecurity",21,2,3,3,NA
+128,"people who experience housing insecurity",30,1,5,4,NA
+129,"the homeless",32,1,3,3,NA
+130,"the homeless",25,1,5,3,NA
+131,"people who experience housing insecurity",73,2,5,2,NA
+132,"the homeless",58,2,6,2,NA
+133,"people who experience housing insecurity",28,1,4,2,NA
+134,"the homeless",48,1,5,3,NA
+135,"people who experience housing insecurity",61,1,5,3,NA
+136,"people who experience housing insecurity",46,1,5,4,NA
+137,"the homeless",45,1,3,1,NA
+138,"people who experience housing insecurity",27,1,3,3,NA
+139,"the homeless",35,1,5,3,NA
+140,"the homeless",30,1,5,3,NA
+141,"the homeless",21,2,6,4,"none"
+142,"the homeless",44,2,6,4,NA
+143,"the homeless",26,3,6,4,NA
+144,"people who experience housing insecurity",38,2,5,3,NA
+145,"people who experience housing insecurity",50,2,4,3,NA
+146,"the homeless",56,2,5,4,NA
+147,"the homeless",45,1,3,1,NA
+148,"the homeless",21,2,3,2,NA
+149,"people who experience housing insecurity",45,1,2,1,"Very interesting, thanks for asking my opinions. Have a great afternoon."
+150,"the homeless",34,1,5,4,NA
+151,"people who experience housing insecurity",23,2,5,2,NA
+152,"people who experience housing insecurity",69,1,3,3,NA
+153,"the homeless",37,1,3,2,"Enjoyed it thanks!"
+154,"the homeless",34,2,6,4,"N/A"
+155,"the homeless",30,2,3,4,NA
+156,"the homeless",41,1,5,3,NA
+157,"people who experience housing insecurity",28,2,2,1,NA
+158,"the homeless",52,2,4,2,"No"
+159,"people who experience housing insecurity",24,1,5,3,NA
+160,"people who experience housing insecurity",70,2,5,4,NA
+161,"people who experience housing insecurity",34,2,5,1,NA
+162,"the homeless",47,2,5,5,NA
+163,"the homeless",26,1,5,1,NA
+164,"the homeless",41,2,5,4,"thank you"
+165,"the homeless",25,2,3,3,NA
+166,"people who experience housing insecurity",45,1,6,4,"I am liberal but I do find political correctness to be a bit much at times. I don't mean any ill will when using outdated terms. It is what I grew up with so it is almost like muscle memory. I think what I am saying is give some grace to people who may not always be politically correct. They are probably empathetic and want to help, but chastising their vocabulary is not a good method to bring about change."
+167,"the homeless",30,2,5,4,NA
+168,"people who experience housing insecurity",36,2,3,2,NA
+169,"people who experience housing insecurity",32,3,3,1,"Thanks"
+170,"people who experience housing insecurity",64,2,2,3,"Thank you! Have a great week"
+171,"people who experience housing insecurity",55,2,3,3,NA
+172,"people who experience housing insecurity",37,1,5,3,"No comment"
+173,"the homeless",78,2,5,4,NA
+174,"people who experience housing insecurity",22,1,3,1,NA
+175,"the homeless",35,2,5,4,"good"
+176,"the homeless",28,2,6,3,NA
+177,"the homeless",55,2,2,3,NA
+178,"people who experience housing insecurity",36,2,5,2,NA
+179,"the homeless",32,2,6,4,NA
+180,"people who experience housing insecurity",46,2,5,4,NA
+181,"the homeless",33,1,4,3,"Everything worked as intended."
+182,"the homeless",31,2,5,3,"None"
+183,"the homeless",38,1,6,4,NA
+184,"people who experience housing insecurity",28,1,2,2,NA
+185,"people who experience housing insecurity",30,2,5,4,NA
+186,"people who experience housing insecurity",36,2,3,3,NA
+187,"the homeless",52,2,4,3,NA
+188,"people who experience housing insecurity",36,1,4,3,NA
+189,"the homeless",24,1,5,3,"No further comments, thank you."
+190,"people who experience housing insecurity",50,2,5,3,NA
+191,"the homeless",29,1,2,2,NA
+192,"the homeless",37,2,5,3,NA
+193,"people who experience housing insecurity",55,2,3,3,NA
+194,"the homeless",35,2,5,2,"no"
+195,"the homeless",40,2,5,3,NA
+196,"the homeless",59,2,5,2,NA
+197,"people who experience housing insecurity",24,2,4,3,NA
+198,"people who experience housing insecurity",60,2,3,1,NA
+199,"people who experience housing insecurity",38,1,5,3,NA
+200,"the homeless",29,2,6,3,NA
+201,"people who experience housing insecurity",32,2,5,4,NA
+202,"people who experience housing insecurity",36,2,4,2,NA
+203,"people who experience housing insecurity",36,1,5,3,NA
+204,"the homeless",33,1,6,4,NA
+205,"the homeless",25,1,5,3,NA
+206,"people who experience housing insecurity",71,2,3,2,"Thank you for this study."
+207,"people who experience housing insecurity",30,2,3,3,NA
+208,"the homeless",57,2,3,1,NA
+209,"the homeless",20,2,2,2,NA
+210,"the homeless",21,1,2,3,NA
+211,"people who experience housing insecurity",41,2,5,2,NA
+212,"people who experience housing insecurity",42,2,4,3,NA
+213,"people who experience housing insecurity",78,1,5,4,NA
+214,"people who experience housing insecurity",59,1,6,1,NA
+215,"the homeless",46,2,5,4,NA
+216,"people who experience housing insecurity",50,1,5,3,NA
+217,"the homeless",22,1,5,1,NA
+218,"the homeless",38,2,2,2,NA
+219,"the homeless",18,1,3,1,NA
+220,"people who experience housing insecurity",23,2,5,3,NA
+221,"the homeless",21,2,2,2,NA
+222,"people who experience housing insecurity",30,2,5,3,NA
+223,"people who experience housing insecurity",24,1,5,3,NA
+224,"people who experience housing insecurity",58,2,6,2,NA
+225,"the homeless",36,2,5,2,"None. Thanks!"
+226,"people who experience housing insecurity",52,2,3,4,"Thank you for this survey.  Every little bit earned ensures I am able to remain housed."
+227,"people who experience housing insecurity",36,1,2,2,NA
+228,"the homeless",45,2,3,3,NA
+229,"people who experience housing insecurity",27,1,5,3,"There may be typo on the donation page; the word ""donation"" is spelled ""nodation"" at the bottom of the page. Other than that, I had no technical issues or confusion."
+230,"the homeless",38,2,5,4,NA
+231,"people who experience housing insecurity",28,2,2,2,NA
+232,"the homeless",38,1,2,3,NA
+233,"people who experience housing insecurity",30,1,5,5,NA
+234,"the homeless",34,2,2,2,"no"
+235,"people who experience housing insecurity",51,2,3,4,NA
+236,"people who experience housing insecurity",65,1,3,1,"Very interesting exercise!"
+237,"people who experience housing insecurity",36,2,3,2,NA
+238,"the homeless",25,1,5,3,NA
+239,"the homeless",43,2,3,3,NA
+240,"the homeless",61,2,4,3,NA
+241,"people who experience housing insecurity",49,2,6,3,NA
+242,"people who experience housing insecurity",43,1,6,4,NA
+243,"the homeless",30,1,5,3,NA
+244,"the homeless",23,1,6,4,NA
+245,"the homeless",33,1,5,3,NA
+246,"the homeless",36,1,2,3,"none"
+247,"people who experience housing insecurity",24,2,4,2,NA
+248,"the homeless",47,2,5,2,"Thank you"
+249,"people who experience housing insecurity",61,2,3,4,NA
+250,"people who experience housing insecurity",28,2,5,2,NA
+251,"the homeless",27,1,6,4,"no"
+252,"people who experience housing insecurity",19,1,3,4,NA
+253,"the homeless",48,2,3,2,"As the economic climate tightens, more and more people will become familiar with housing insecurity. This issue needs to be addressed."
+254,"the homeless",34,1,6,4,"no"
+255,"people who experience housing insecurity",30,2,5,4,NA
+256,"the homeless",26,2,6,1,NA
+257,"people who experience housing insecurity",61,2,4,1,NA
+258,"people who experience housing insecurity",32,2,4,1,":)"
+259,"people who experience housing insecurity",38,2,3,2,NA
+260,"the homeless",61,2,5,1,NA
+261,"the homeless",37,2,5,2,"nice study"
+262,"the homeless",36,2,5,3,"The questions about politically correct language were a little tough to answer, because I think people would differ in what exactly that means. I think I prefer ""politically correct"" language if i genuinely believe it's more truthful or kind, but I tend to have a distaste for it otherwise"
+263,"the homeless",40,1,3,3,NA
+264,"the homeless",40,1,5,5,NA
+265,"people who experience housing insecurity",44,2,5,3,NA
+266,"people who experience housing insecurity",63,2,5,3,"no"
+267,"the homeless",45,2,6,4,"I enjoyed my time taking the survey."
+268,"people who experience housing insecurity",56,2,5,4,NA
+269,"people who experience housing insecurity",30,1,6,4,NA
+270,"people who experience housing insecurity",21,1,2,3,"I wonder if you should define ""housing insecurity"". I didn't think it had any related meaning to ""homeless"" until the study started saying so."
+271,"the homeless",44,2,6,3,NA
+272,"the homeless",27,1,6,3,NA
+273,"the homeless",64,2,3,2,"No thank you."
+274,"the homeless",55,2,5,3,NA
+275,"people who experience housing insecurity",46,1,5,4,NA
+276,"people who experience housing insecurity",66,2,4,2,NA
+277,"people who experience housing insecurity",47,1,5,4,NA
+278,"the homeless",79,2,4,1,NA
+279,"the homeless",26,4,5,1,NA
+280,"the homeless",25,1,3,2,NA
+281,"people who experience housing insecurity",56,2,5,1,NA
+282,"the homeless",68,1,5,3,"none"
+283,"the homeless",27,2,2,3,"Thank you!"
+284,"people who experience housing insecurity",72,1,5,3,NA
+285,"the homeless",52,1,3,2,"please put there is writing in the description on further studies. thank you."
+286,"people who experience housing insecurity",31,2,5,4,NA
+287,"people who experience housing insecurity",52,2,5,3,"N/A"
+288,"the homeless",49,2,6,4,NA
+289,"people who experience housing insecurity",30,1,3,3,NA
+290,"the homeless",61,2,2,3,"I believe I may have missed the attention check question. I initially accidentally left out the response just above the attention check and right when I clicked the arrow to move forward, I saw in the blink of an eye the attention check but it was too late to correct it. I really did pay attention to and answered the questions thoroughly."
+291,"the homeless",30,2,2,1,"This was a nice survey. Thank you :)"
+292,"people who experience housing insecurity",35,1,5,3,NA
+293,"people who experience housing insecurity",48,1,6,4,NA
+294,"the homeless",38,1,6,4,NA
+295,"people who experience housing insecurity",23,2,5,4,NA
+296,"people who experience housing insecurity",22,1,4,2,NA
+297,"the homeless",22,1,3,2,NA
+298,"the homeless",52,2,5,1,NA
+299,"the homeless",21,1,5,3,"None"
+300,"the homeless",46,2,5,2,NA
+301,"the homeless",59,1,4,3,NA
+302,"the homeless",50,2,6,3,NA
+303,"people who experience housing insecurity",23,2,5,3,NA
+304,"people who experience housing insecurity",31,1,5,5,NA
+305,"the homeless",54,2,6,2,"In the final question about knowing anyone who has experienced housing insecurity, I wasn't sure whether I should list my family (me, spouse, child) since we are living with family now, and would need financial assistance from others in order to get our own place. It is too scary and sad to think about, but we probably do fit into that category, all things being equal. By the time I decided that I had already clicked the next button and unable to go back and add it to my answer."
+306,"people who experience housing insecurity",19,1,2,4,"none"
+307,"the homeless",36,1,5,4,NA
+308,"people who experience housing insecurity",41,1,3,2,NA
+309,"people who experience housing insecurity",45,1,5,4,NA
+310,"people who experience housing insecurity",56,2,3,2,NA
+311,"people who experience housing insecurity",50,1,5,1,NA
+312,"people who experience housing insecurity",38,2,3,2,NA
+313,"people who experience housing insecurity",22,2,5,2,NA
+314,"the homeless",51,2,5,3,NA
+315,"people who experience housing insecurity",53,1,4,1,NA
+316,"people who experience housing insecurity",50,1,6,4,NA
+317,"people who experience housing insecurity",66,2,6,4,NA
+318,"people who experience housing insecurity",62,2,6,3,"thank you for researching this subject"
+319,"the homeless",54,1,1,4,NA
+320,"people who experience housing insecurity",40,1,5,3,"I've very recently experienced housing insecurity and having to depend on help from friends/family due to multiple layoffs from jobs and stress that came with it. Local social safety nets (like SNAP) weren't much help due to my local office having ""filing issues"" and postponing my benefits for months, so I also understand how easily help can fail those in need."
+321,"the homeless",28,3,2,1,NA
+322,"people who experience housing insecurity",25,3,5,2,NA
+323,"the homeless",25,1,6,4,NA
+324,"the homeless",56,2,6,5,"This was an interesting, thought-provoking study. Thank you!"
+325,"the homeless",55,2,5,2,NA
+326,"people who experience housing insecurity",63,2,4,2,NA
+327,"the homeless",20,1,5,2,"all good and educative. thank you"
+328,"the homeless",78,1,6,4,NA
+329,"people who experience housing insecurity",56,1,2,2,NA
+330,"people who experience housing insecurity",23,1,6,4,NA
+331,"people who experience housing insecurity",60,2,5,3,"none right now, thank you!"
+332,"people who experience housing insecurity",42,2,6,1,"I'm not sure it's important, but my answers come from my 10 years of working in a nonprofit organization that served individuals and families experiencing homelessness. I was a Case Manager, Employment Specialist, and Grant Writer at the organization over 10 years."
+333,"the homeless",23,1,2,3,NA
+334,"the homeless",29,1,5,3,"no"
+335,"the homeless",26,1,5,4,NA
+336,"people who experience housing insecurity",19,2,5,3,NA
+337,"people who experience housing insecurity",42,2,5,4,NA
+338,"people who experience housing insecurity",25,2,3,1,NA
+339,"people who experience housing insecurity",75,1,6,3,NA
+340,"the homeless",42,1,2,1,NA
+341,"people who experience housing insecurity",30,1,5,3,NA
+342,"the homeless",43,1,4,3,"Interesting study, thanks for letting me be a small part! I hate the idea of homelessness, and if I could wave a magic wand I would create housing for everyone in need. Reality is, most individuals who are experiencing this are doing so because of an underlying issue (such as alcohol or drub addiction)It is tragic, but we have to figure that portion of the issue out first to help with the actual homlessness"
+343,"the homeless",33,2,5,4,NA
+344,"people who experience housing insecurity",59,1,2,1,NA
+345,"the homeless",35,2,5,4,NA
+346,"the homeless",25,1,3,3,"NO"
+347,"the homeless",41,2,3,3,NA
+348,"the homeless",39,3,4,2,"No comments"
+349,"the homeless",34,1,5,4,NA
+350,"the homeless",43,1,7,4,"None"
+351,"people who experience housing insecurity",37,1,7,4,NA
+352,"the homeless",27,2,4,3,"N/A"
+353,"the homeless",25,2,2,3,NA
+354,"the homeless",60,1,5,5,NA
+355,"people who experience housing insecurity",27,1,3,2,NA
+356,"people who experience housing insecurity",22,1,4,2,"no please"
+357,"people who experience housing insecurity",20,1,5,3,NA
+358,"people who experience housing insecurity",39,1,5,3,NA
+359,"people who experience housing insecurity",34,2,5,3,NA
+360,"the homeless",21,2,5,3,NA
+361,"people who experience housing insecurity",28,1,6,4,NA
+362,"the homeless",21,1,5,4,NA
+363,"people who experience housing insecurity",45,1,5,3,"thanks"
+364,"people who experience housing insecurity",31,1,5,3,NA
+365,"people who experience housing insecurity",28,2,5,3,"no"
+366,"the homeless",77,2,3,1,NA
+367,"the homeless",43,1,4,3,NA
+368,"people who experience housing insecurity",58,2,3,1,"Thanks for allowing my participation in the study. Happy Holidays!"
+369,"the homeless",55,2,5,3,NA
+370,"the homeless",29,1,5,3,"I'm happy to help clarify any aspects or address any concerns you might have regarding the study on how labels affect perceptions of homelessness."
+371,"the homeless",33,2,5,3,NA
+372,"the homeless",27,1,6,3,NA
+373,"people who experience housing insecurity",24,2,6,5,"I enjoyed this survey and would love to take part more"
+374,"the homeless",43,1,5,4,NA
+375,"the homeless",25,1,5,1,NA
+376,"people who experience housing insecurity",22,1,3,3,"N/A"
+377,"people who experience housing insecurity",41,2,6,3,NA
+378,"people who experience housing insecurity",39,2,5,4,NA
+379,"people who experience housing insecurity",29,1,3,3,"N/A"
+380,"the homeless",28,1,6,4,"no"
+381,"people who experience housing insecurity",24,2,5,3,NA
+382,"people who experience housing insecurity",55,1,5,3,NA
+383,"the homeless",41,1,2,3,NA
+384,"the homeless",27,1,6,5,NA
+385,"people who experience housing insecurity",46,2,7,2,NA
+386,"the homeless",46,1,6,4,"no comment"
+387,"the homeless",31,1,5,2,NA
+388,"the homeless",33,1,2,2,NA
+389,"people who experience housing insecurity",36,2,4,2,NA
+390,"people who experience housing insecurity",49,2,6,4,NA
+391,"people who experience housing insecurity",30,1,5,3,NA
+392,"people who experience housing insecurity",39,2,5,3,NA
+393,"the homeless",32,1,5,3,"Thank you!"
+394,"people who experience housing insecurity",25,1,5,1,NA
+395,"the homeless",51,2,3,3,"No, not at this time."
+396,"people who experience housing insecurity",52,1,2,2,NA
+397,"people who experience housing insecurity",21,1,3,2,NA
+398,"people who experience housing insecurity",26,1,3,1,NA
+399,"people who experience housing insecurity",51,1,5,5,NA

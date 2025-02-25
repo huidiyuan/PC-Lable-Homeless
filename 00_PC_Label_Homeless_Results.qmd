@@ -59,11 +59,16 @@ source("06_New_Codes/library.R")
 # Read data
 data_deidentify <- read.csv("data_deidentify.csv")
 
+# Move ppt_ID to the first column
+data_deidentify <- data_deidentify %>%
+  select(ppt_ID, everything())
+
 view(data_deidentify)
 ```
 
 ```{r}
-#| label: data-cleaning-separate-demo
+#| label: cleaning-separate-demo
+#| include: false
 
 # Separate demographics
 data_demo <- data_deidentify %>%
@@ -77,7 +82,55 @@ write.csv(data_demo, "data_demo.csv", row.names = FALSE)
 ```
 
 ```{r}
+#| label: cleaning-separate-fr
+#| include: false
 
+# Separate free response questions
+data_fr <- data_deidentify %>%
+  select(ppt_ID, 
+         label,
+         general_1,
+         general_2,
+         like_fr,
+         offens_fr,
+         impression_1, 
+         impression_2,
+         impression_3_4_TEXT,
+         comment
+         )
+```
+
+```{r}
+#| label: cleaning-separate-quant-main
+#| include: false
+
+# Separate columns that is not demo or free response
+data_main <- data_deidentify %>%
+  select(-c(starts_with("Demo_"),
+            general_1,
+            general_2,
+            like_fr,
+            offens_fr,
+            impression_1,
+            impression_2,
+            impression_3_4_TEXT,
+            comment)
+         ) %>%
+  # Correct data type
+  mutate(across(where(is.character), # Apply to character columns only
+                ~ ifelse(!is.na(suppressWarnings(as.numeric(.))),
+                         as.numeric(.), 
+                         .))) %>% # If it can be converted to numeric, convert it
+  # Correct data type for columns with NA
+  mutate(
+    experience_1 = as.numeric(experience_1),
+    experience_2 = as.numeric(experience_2),
+    experience_3 = as.numeric(experience_3),
+    SliderOverlapValue = as.numeric(SliderOverlapValue)
+  ) %>%
+  # Select rows that pass attention check
+  filter(check == 2)
+  
 ```
 
 # Result
