@@ -137,7 +137,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Uses more than one function to install/load/require packages (including those used in commented code)
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -147,7 +147,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Uses multiple operators in data transformation pipelines and/or inline R code
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -159,7 +159,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  Functions are well-documented with comments
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -169,7 +169,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Uses multiple types of conditional/loop functions (e.g., `if_else()`, `case_when()`, `for`, `while`)
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -179,7 +179,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Writes out intermediate and/or final datasets in code chunks or sourced scripts
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -191,7 +191,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  Combines `dplyr` and `tidyr` functions in a data transformation pipeline
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -201,7 +201,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Uses `stringr` functions in a data transformation pipeline
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -211,7 +211,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Uses `forcats` functions in a data transformation pipeline
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -223,7 +223,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  At least one plot is multi-variable
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -231,7 +231,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     1.  Uses at least 2 unique data-mapped `aes()` arguments (e.g., color, shape, size) to group data in a plot in one or multiple plots
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -255,7 +255,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     4.  Uses at least 1 static aesthetic (e.g., color, shape, size) that improves visual clarity without mapping to data
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -281,7 +281,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  Presents results in narrative text, table, or plot
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -295,7 +295,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     4.  Uses dynamic inline R code to render data-dependent text
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -325,7 +325,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     5.  May include references not cited in-text
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -341,7 +341,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     4.  Chunks are distributed throughout the manuscript, sensibly placed near the text they support
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -355,7 +355,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     4.  Organizes setup chunks sensibly
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -371,7 +371,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     5.  References render without error and link to the correct table/figure in pdf/html output
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -387,7 +387,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     5.  Chunks are organized sensibly and appear near the text they support
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -397,7 +397,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     1.  Includes all necessary metadata, output options, and formatting options necessary to render an APA styled document (or other specified style if appropriate for the project)
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -410,7 +410,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     -   NOTE: This is going to be one of the most flexible objectives to demonstrate. You need to demonstrate a range of markdown skills and use them to make a readable, informative manuscript. Hitting the four points above should do that, but you can use your judgment about what kind of markdown features will best serve your project. No matter what, you should use markdown to follow APA7 guidelines.
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -422,7 +422,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  Ideally, uses inline R references for *all* data-dependent text
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -444,6 +444,6 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     4.  No additional steps are needed (e.g., finding data, determining necessary packages to install and load, running unsourced scripts)
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:

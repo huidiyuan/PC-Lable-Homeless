@@ -42,29 +42,16 @@ execute:
   echo: false # set global chunk options: Show output only
   warning: false # override these in individual chunks
 ---
-# Introduction
-
-The way individuals are labeled—such as "the homeless" versus "people experiencing housing insecurity"—can influence stigma, stereotypes, and charitable behavior. This study examines how different labels affect:
-
-- Perceptions of homelessness-related stigma,
-- Stereotypical judgments,
-- Donation behaviors.
-
-We hypothesize that:
-
-1. Person-centered labels reduce stigma and stereotypes (H1); 
-2. Person-centered labels increase donations to unhoused group (H2);
-3. Stigma and stereotypes predict donation amounts to unhoused group (H3).
-
-## Methods
 
 ```{r}
 #| label: setup
 #| include: false
 
-# Source library R script
-source("06_New_Codes/library.R")
+# Load and install packages
+source("01_library.R")
 
+# Set random seed
+set.seed(1234)
 ```
 
 ```{r}
@@ -82,11 +69,22 @@ view(data_deidentify)
 ```
 
 ```{r}
-#| label: cleaning-separate-demo
+#| label: cleaning-recode
+#| include: false
+
+# Data cleaning and recoding
+source("01_cleaning_recode.R")
+
+# The cleaned data is saved as data_clean
+view(data_clean)
+```
+
+```{r}
+#| label: separate-demo
 #| include: false
 
 # Separate demographics
-data_demo <- data_deidentify %>%
+data_demo <- data_clean %>%
   select(ppt_ID, 
          label,
          starts_with("Demo_"), 
@@ -97,11 +95,11 @@ write.csv(data_demo, "data_demo.csv", row.names = FALSE)
 ```
 
 ```{r}
-#| label: cleaning-separate-fr
+#| label: separate-fr
 #| include: false
 
 # Separate free response questions
-data_fr <- data_deidentify %>%
+data_fr <- data_clean %>%
   select(ppt_ID, 
          label,
          general_1,
@@ -113,14 +111,16 @@ data_fr <- data_deidentify %>%
          impression_3_4_TEXT,
          comment
          )
+
+write.csv(data_fr, "data_fr.csv", row.names = FALSE)
 ```
 
 ```{r}
-#| label: cleaning-separate-quant-main
+#| label: separate-quant-as-main
 #| include: false
 
 # Separate the MAIN DATA that is not demo or free response
-data_main <- data_deidentify %>%
+data_main <- data_clean %>%
   select(-c(starts_with("Demo_"),
             general_1,
             general_2,
@@ -130,69 +130,38 @@ data_main <- data_deidentify %>%
             impression_2,
             impression_3_4_TEXT,
             comment)
-         ) %>%
-  # Correct data type
-  mutate(across(where(is.character), # Apply to character columns only
-                ~ ifelse(!is.na(suppressWarnings(as.numeric(.))),
-                         as.numeric(.), 
-                         .))) %>% # If it can be converted to numeric, convert it
-  # Correct data type for columns with NA
-  mutate(
-    experience_1 = as.numeric(experience_1),
-    experience_2 = as.numeric(experience_2),
-    experience_3 = as.numeric(experience_3),
-    SliderOverlapValue = as.numeric(SliderOverlapValue)
-  ) %>%
-  # Select rows that pass attention check
-  filter(check == 2)
-  
+         )
+
+# View the main data
+view(data_main)
+
+# Save the main data
+write.csv(data_main, "data_main.csv", row.names = FALSE)
 ```
 
-```{r}
-#| label: cleaning-recode
-#| include: false
+# Introduction
 
-# Recode to correct wrong values and wrong order
-data_main_recode <- data_main %>%
-  # In primary and early_language, change 4=English and other to 3 = English and other.
-  mutate(
-    primary = if_else(primary == 4, 3, primary),
-    early_language = if_else(early_language == 4, 3, early_language)
-  ) %>%
-  # For all stigma_, 5 = the most stigmatized, 1 = the least stigmatized
-  ## Recode stigma_resp_2, stigma_dist_2, stigma_dist_3
-  mutate(stigma_resp_2_mut = 6 - stigma_resp_2,
-         stigma_dist_2_mut = 6 - stigma_dist_2, 
-         stigma_dist_3_mut = 6 - stigma_dist_3) %>%
-  select(-c(stigma_resp_2, stigma_dist_2, stigma_dist_3)) %>%
-  # For all stertyp_, 5 = the most stereotyped (negatively)
-  ## Reverse all values in stertyp_ columns
-  mutate(across(
-    starts_with("stertyp_"), # Select columns starting with "stertyp_"
-    ~ 6 - ., # Reverse the values 
-    .names = "{.col}_rev" # Add "_rev" to the new column names
-  )) %>%
-  ## Remove original stertyp_ columns: start with "stertyp_" but not end with "_rev"
-  select(-starts_with("stertyp_")|ends_with("_rev")) %>%
-  # Calculate main DVs: average stigma and stereotype
-  mutate(
-    stigma_avg = rowMeans(select(., starts_with("stigma_")), na.rm = TRUE),
-    stereotype_avg = rowMeans(select(., starts_with("stertyp_")), na.rm = TRUE)
-  ) %>%
-  # Rename donate columns
-  rename(donate_unhoused = donate_1, 
-         donate_children = donate_2,
-         donate_animals = donate_3)
+The way individuals are labeled—such as "`r data_main$label[2]`" versus "`r data_main$label[1]`"—can influence stigma, stereotypes, and charitable behavior. This study examines how different labels affect:
 
-```
+- Perceptions of homelessness-related stigma,
+- Stereotypical judgments,
+- Donation behaviors.
 
+We hypothesize that:
+
+1. Person-centered labels reduce stigma and stereotypes (H1); 
+2. Person-centered labels increase donations to unhoused group (H2);
+3. Stigma and stereotypes predict donation amounts to unhoused group (H3).
+
+## Methods
 ### Participants
-A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_deidentify) - nrow(data_main_recode)` participants were excluded due to failing attention checks. Thus the final sample size was `r nrow(data_main_recode)`.
+A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_deidentify) - nrow(data_main)` participants were excluded due to failing attention checks. Thus the final sample size was `r nrow(data_main)`.
 
 ### Measures
 - **Stigma Perception** (6-item 5-points Likert scale)
 - **Stereotypical Judgment** (8-item 5-points Likert scale) [@fiskeetal_2002_model]
 - **Donation Allocation** (Amount donated to homeless organizations out of three different organizations)
+See @tbl-measures for detailed measures and items.
 
 |                  | **Measures**  | **Items**                             |
 |------------------|---------------|---------------------------------------|
@@ -202,9 +171,10 @@ A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_d
 | | **Stereotypes**  _N = 8_ | How competent are [Label]?  |
 | | _Likert (1-5)_           | How well educated are [Label]?  |
 | |                          | How warmhearted are [Label]?  |
-| **Behavioral Measures** | **Donation** _$100_ | Covenant House - For [Label]  |
-||                                                  | Save the Children  |
-|                     |                                                  | American Society for the Prevention of Cruelty to Animals (ASPCA)  |
+|------------------|---------------|---------------------------------------|
+| | **Donation** _$100_      | Covenant House - For [Label]  |
+| **Behavioral Measures** |  | Save the Children  |
+| |                          | American Society for the Prevention of Cruelty to Animals (ASPCA)  |
 
 : Main Measures {#tbl-measures apa-note="Stigma measures include: Responsibility, danger, social distance; Stereotypes measures include: Competence, warmth, status, competition."
 data-quarto-disable-processing="true"}
@@ -212,23 +182,51 @@ data-quarto-disable-processing="true"}
 # Result
 ## Person-Centered Labels Reduce Stigma and Stereotypes (H1)
 ### Stigma
+
+```{r}
+#| label: functions-anova-report
+#| include: false
+
+# Function to report one-way ANOVA results in text
+report_anova <- function(model) {
+  
+  # Extract ANOVA summary statistics
+  anova_results <- tidy(model)
+  
+  # Get key values (assuming a one-way ANOVA with one main factor)
+  df1 <- anova_results$df[1]  # Between-group degrees of freedom
+  df2 <- anova_results$df[2]  # Within-group degrees of freedom (Residual)
+  F_value <- round(anova_results$statistic[1], 2)  # F-statistic
+  p_value <- apa_p(anova_results$p.value[1], add_equals = TRUE)  # Formatted p-value
+  
+  # Construct the APA formatted string
+  report <- paste0("$F$(", df1, ", ", df2, ") = ", F_value, 
+                   ", $p$ = ", p_value)
+  
+  return(report)
+}
+
+```
+
 ```{r}
 #| label: f-test-stigma-by-label
 #| include: false
 
 # F-test (ANOVA) for stigma by label
-stigma_aov <- aov(stigma_avg ~ label, data = data_main_recode)
+stigma_aov <- aov(stigma_avg ~ label, data = data_main)
 summary(stigma_aov)
 
 ```
-Stigma perception significantly differed by label.
+Stigma perception significantly differed by label `r report_anova(stigma_aov)`.
 
 ```{r}
 #| label: fig-stigma-by-label
-#| caption: "Stigma by Label"
+#| fig.cap: "Stigma: Conventional vs. Inclusive Labels"
+#| fig.width: 4
+#| fig.height: 3
 
 # Boxplot of stigma by label
-ggplot(data_main_recode, aes(x = label, y = stigma_avg, fill = label)) +
+ggplot(data_main, aes(x = label, y = stigma_avg, fill = label)) +
   geom_boxplot() +
   labs(title = "Boxplot of Average Stigma Perception by Label",
     x = "Label",
@@ -246,17 +244,19 @@ ggplot(data_main_recode, aes(x = label, y = stigma_avg, fill = label)) +
 #| include: false
 
 # F-test (ANOVA) for stereotype by label
-stereotype_aov <- aov(stereotype_avg ~ label, data = data_main_recode)
+stereotype_aov <- aov(stereotype_avg ~ label, data = data_main)
 summary(stereotype_aov)
 ```
 Stereotype perception significantly differed by label.
 
 ```{r}
 #| label: fig-stereotype-by-label
-#| caption: "Stereotypes by Label"
+#| fig.cap: "Stereotype: Conventional vs. Inclusive Labels"
+#| fig.width: 4
+#| fig.height: 3
 
 # Boxplot of stereotypes by label
-ggplot(data_main_recode, aes(x = label, y = stereotype_avg, fill = label)) +
+ggplot(data_main, aes(x = label, y = stereotype_avg, fill = label)) +
   geom_boxplot() +
   labs(title = "Boxplot of Average Stereotype Perception by Label",
     x = "Label",
@@ -274,7 +274,7 @@ ggplot(data_main_recode, aes(x = label, y = stereotype_avg, fill = label)) +
 #| include: false
 
 # Correlation between stigma and stereotypes
-cor_stigma_stereotype <- cor.test(data_main_recode$stigma_avg, data_main_recode$stereotype_avg, method = "pearson")
+cor_stigma_stereotype <- cor.test(data_main$stigma_avg, data_main$stereotype_avg, method = "pearson")
 
 cor_stigma_stereotype
 ```
@@ -282,10 +282,12 @@ Stigma and stereotypes were significantly correlated.
 
 ```{r}
 #| label: fig-correlation-stigma-stereotype
-#| caption: "Correlation between Stigma and Stereotypes"
+#| fig.cap: "Stigma vs. Stereotypes"
+#| fig.width: 4
+#| fig.height: 3
 
 # Scatterplot and linear regression of stigma and stereotypes
-ggplot(data_main_recode, aes(x = stigma_avg, y = stereotype_avg, color = label)) +
+ggplot(data_main, aes(x = stigma_avg, y = stereotype_avg, color = label)) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(title = "Correlation between Stigma and Stereotypes",
@@ -295,14 +297,14 @@ ggplot(data_main_recode, aes(x = stigma_avg, y = stereotype_avg, color = label))
   theme(legend.position = "none")
 ```
 
-## Person-Centered Labels Increase Donations (H2)
+## H2: Person-Centered Labels vs. Donations
 ### Donation Distribution
 ```{r}
 #| label: donation-distribution-by-label
 #| include: false
 
 # Mean donate_1,2,3 by label
-mean_donate <- data_main_recode %>%
+mean_donate <- data_main %>%
   group_by(label) %>%
   summarise(
     mean_donate_unhoused = mean(donate_unhoused, na.rm = TRUE),
@@ -318,7 +320,7 @@ Among the three organizations, avergae donation to the unhoused organization is 
 #| include: false
 
 # F-test (ANOVA) for donation by label
-supportive_aov <- aov(donate_unhoused ~ label, data = data_main_recode)
+supportive_aov <- aov(donate_unhoused ~ label, data = data_main)
 
 summary(supportive_aov)
 ```
@@ -329,14 +331,18 @@ Donation, however, did not significantly differ by label.
 
 ```{r}
 #| label: fig-donate-all-by-label
-#| caption: "Donation Distribution by Label"
+#| fig-cap: "Donation Distribution by Label"
+#| fig.width: 5
+#| fig.height: 3
 
 # Pivot long for donate_1,2,3
-data_main_recode_donate_long <- data_main_recode %>%
+data_main_donate_long <- data_main %>%
   pivot_longer(cols = starts_with("donate"), names_to = "organization", values_to = "donation")
 
 # Boxplot of donate by organization and label
-ggplot(data_main_recode_donate_long, aes(x = organization, y = donation, fill = label)) +
+ggplot(data_main_donate_long, aes(x = fct_reorder(organization, donation, .desc = TRUE),
+                                  y = donation, 
+                                  fill = label)) +
   geom_boxplot() +
   labs(title = "Boxplot of Donation Amount by Organization and Label",
     x = "Organization",
@@ -355,7 +361,7 @@ ggplot(data_main_recode_donate_long, aes(x = organization, y = donation, fill = 
 #| include: false
 
 # Pearson correlation between stigma and donate_unhoused
-cor_stigma_donate <- cor.test(data_main_recode$stigma_avg, data_main_recode$donate_unhoused, method = "pearson")
+cor_stigma_donate <- cor.test(data_main$stigma_avg, data_main$donate_unhoused, method = "pearson")
 
 cor_stigma_donate
 ```
@@ -367,11 +373,11 @@ cor_stigma_donate
 # Hierarchical Linear Regression for stigma predicting donate_unhoused by label
 
 ## Center stigma_avg
-data_main_recode_scale_stigma <- data_main_recode %>%
+data_main_scale_stigma <- data_main %>%
   mutate(stigma_avg_c = scale(stigma_avg, center = TRUE, scale = FALSE))
 
 ## Run Moderation Analysis
-moderation_model <- lm(donate_unhoused ~ stigma_avg_c * label, data = data_main_recode_scale_stigma)
+moderation_model <- lm(donate_unhoused ~ stigma_avg_c * label, data = data_main_scale_stigma)
 
 ## Display results
 summary(moderation_model)
@@ -380,11 +386,18 @@ Stigma perception is negatively correlated with donation amount. However, the re
 
 ```{r}
 #| label: fig-correlation-stigma-donation
-#| caption: "Correlation between Stigma and Donation to Unhoused Organization"
+#| fig.cap: "Stigma vs. Donation"
+#| fig.width: 5
+#| fig.height: 3.5
+
+# Summarize the data to count frequencies of each (stigma_avg, donate_unhoused) pair
+data_summary <- data_main %>%
+  group_by(stigma_avg, donate_unhoused, label) %>%
+  summarise(count = n(), .groups = "drop")
 
 # Scatterplot and linear regression of stigma and donate_unhoused
-ggplot(data_main_recode, aes(x = stigma_avg, y = donate_unhoused, color = label)) +
-  geom_point() +
+ggplot(data_summary, aes(x = stigma_avg, y = donate_unhoused, color = label)) +
+  geom_point(aes(size = count)) +
   geom_smooth(method = "lm") +
   labs(title = "Correlation between Stigma and Donation to Unhoused Organization",
     x = "Average Stigma Perception",
@@ -399,7 +412,7 @@ ggplot(data_main_recode, aes(x = stigma_avg, y = donate_unhoused, color = label)
 #| include: false
 
 # Pearson correlation between stereotype and donate_unhoused
-cor_stereotype_donate <- cor.test(data_main_recode$stereotype_avg, data_main_recode$donate_unhoused, method = "pearson")
+cor_stereotype_donate <- cor.test(data_main$stereotype_avg, data_main$donate_unhoused, method = "pearson")
 
 cor_stereotype_donate
 ```
