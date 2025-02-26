@@ -1,3 +1,7 @@
+---
+output: word_document
+---
+
 # Research Project Assessment
 
 **This assessment is for the final research project only.** Use the `assessment.md` file for all mini-projects.

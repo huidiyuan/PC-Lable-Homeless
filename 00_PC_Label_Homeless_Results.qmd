@@ -42,6 +42,21 @@ execute:
   echo: false # set global chunk options: Show output only
   warning: false # override these in individual chunks
 ---
+# Introduction
+
+The way individuals are labeled—such as "the homeless" versus "people experiencing housing insecurity"—can influence stigma, stereotypes, and charitable behavior. This study examines how different labels affect:
+
+- Perceptions of homelessness-related stigma,
+- Stereotypical judgments,
+- Donation behaviors.
+
+We hypothesize that:
+
+1. Person-centered labels reduce stigma and stereotypes (H1); 
+2. Person-centered labels increase donations to unhoused group (H2);
+3. Stigma and stereotypes predict donation amounts to unhoused group (H3).
+
+## Methods
 
 ```{r}
 #| label: setup
@@ -171,9 +186,31 @@ data_main_recode <- data_main %>%
 
 ```
 
+### Participants
+A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_deidentify) - nrow(data_main_recode)` participants were excluded due to failing attention checks. Thus the final sample size was `r nrow(data_main_recode)`.
+
+### Measures
+- **Stigma Perception** (6-item 5-points Likert scale)
+- **Stereotypical Judgment** (8-item 5-points Likert scale) [@fiskeetal_2002_model]
+- **Donation Allocation** (Amount donated to homeless organizations out of three different organizations)
+
+|                  | **Measures**  | **Items**                             |
+|------------------|---------------|---------------------------------------|
+| | **Stigma**  _N = 6_ | [Label] are responsible for their condition  |
+| | _Likert (1-5)_      | [Label] are dangerous  |
+| **Survey Measures** | | It is better to be away from [Label].  |
+| | **Stereotypes**  _N = 8_ | How competent are [Label]?  |
+| | _Likert (1-5)_           | How well educated are [Label]?  |
+| |                          | How warmhearted are [Label]?  |
+| **Behavioral Measures** | **Donation** _$100_ | Covenant House - For [Label]  |
+||                                                  | Save the Children  |
+|                     |                                                  | American Society for the Prevention of Cruelty to Animals (ASPCA)  |
+
+: Main Measures {#tbl-measures apa-note="Stigma measures include: Responsibility, danger, social distance; Stereotypes measures include: Competence, warmth, status, competition."
+data-quarto-disable-processing="true"}
 
 # Result
-## Hypothesis 1: Person-Centered Labels Reduce Stigma and Stereotypes
+## Person-Centered Labels Reduce Stigma and Stereotypes (H1)
 ### Stigma
 ```{r}
 #| label: f-test-stigma-by-label
@@ -184,6 +221,8 @@ stigma_aov <- aov(stigma_avg ~ label, data = data_main_recode)
 summary(stigma_aov)
 
 ```
+Stigma perception significantly differed by label.
+
 ```{r}
 #| label: fig-stigma-by-label
 #| caption: "Stigma by Label"
@@ -210,6 +249,8 @@ ggplot(data_main_recode, aes(x = label, y = stigma_avg, fill = label)) +
 stereotype_aov <- aov(stereotype_avg ~ label, data = data_main_recode)
 summary(stereotype_aov)
 ```
+Stereotype perception significantly differed by label.
+
 ```{r}
 #| label: fig-stereotype-by-label
 #| caption: "Stereotypes by Label"
@@ -237,6 +278,7 @@ cor_stigma_stereotype <- cor.test(data_main_recode$stigma_avg, data_main_recode$
 
 cor_stigma_stereotype
 ```
+Stigma and stereotypes were significantly correlated.
 
 ```{r}
 #| label: fig-correlation-stigma-stereotype
@@ -253,7 +295,7 @@ ggplot(data_main_recode, aes(x = stigma_avg, y = stereotype_avg, color = label))
   theme(legend.position = "none")
 ```
 
-## Hypothesis 2: Person-Centered Labels Increase Donations
+## Person-Centered Labels Increase Donations (H2)
 ### Donation Distribution
 ```{r}
 #| label: donation-distribution-by-label
@@ -268,16 +310,22 @@ mean_donate <- data_main_recode %>%
     mean_donate_animals = mean(donate_animals, na.rm = TRUE)
   )
 ```
+Among the three organizations, avergae donation to the unhoused organization is the highest (report mean donation to unhoused) compared to children (report mean donation to children) and animal (report mean donation to animal) organizations. See figure... 
 
 ### Donation to Unhoused Org. by Label
 ```{r}
-#｜ label: f-test-donation-by-label
-#｜ include: false
+#| label: f-test-donation-by-label
+#| include: false
 
 # F-test (ANOVA) for donation by label
 supportive_aov <- aov(donate_unhoused ~ label, data = data_main_recode)
+
 summary(supportive_aov)
 ```
+
+Donation, however, did not significantly differ by label.
+[report mean donation for unhoused org. by label]
+
 
 ```{r}
 #| label: fig-donate-all-by-label
@@ -300,7 +348,7 @@ ggplot(data_main_recode_donate_long, aes(x = organization, y = donation, fill = 
                      label.y = 105)
 ```
 
-## Hypothesis 3: Stigma and stereotypes predict donation
+## Stigma and stereotypes predict donation (H3)
 ### Stigma and Donation
 ```{r}
 #| label: correlation-stigma-donation
@@ -328,6 +376,7 @@ moderation_model <- lm(donate_unhoused ~ stigma_avg_c * label, data = data_main_
 ## Display results
 summary(moderation_model)
 ```
+Stigma perception is negatively correlated with donation amount. However, the relationship between stigma and donation did not differ by label.
 
 ```{r}
 #| label: fig-correlation-stigma-donation
@@ -354,4 +403,10 @@ cor_stereotype_donate <- cor.test(data_main_recode$stereotype_avg, data_main_rec
 
 cor_stereotype_donate
 ```
+Stereotype perception is not significantly correlated with donation amount.
 
+
+\newpage
+# References
+::: {#refs}
+:::
