@@ -171,9 +171,10 @@ data_main_recode <- data_main %>%
 data_main_recode <- data_main_recode %>%
   mutate(across(
     starts_with("stertyp_"), # Select columns starting with "stertyp_"
-    ~ 6 - ., # Reverse the values (assuming range is 1 to 5)
+    ~ 6 - ., # Reverse the values 
     .names = "{.col}_rev" # Add "_rev" to the new column names
   )) %>%
+  ## Remove original stertyp_ columns: start with "stertyp_" but not end with "_rev"
   select(-starts_with("stertyp_")|ends_with("_rev"))
 
 data_main_noFR <- data_main_recode %>%
