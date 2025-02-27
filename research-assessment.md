@@ -410,7 +410,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     -   NOTE: This is going to be one of the most flexible objectives to demonstrate. You need to demonstrate a range of markdown skills and use them to make a readable, informative manuscript. Hitting the four points above should do that, but you can use your judgment about what kind of markdown features will best serve your project. No matter what, you should use markdown to follow APA7 guidelines.
 
-        -   [x] Objective attempt
+        -   [ ] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
