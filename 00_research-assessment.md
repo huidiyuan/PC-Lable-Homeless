@@ -26,23 +26,23 @@ To complete this assessment:
 
 ## Basic information
 
-Name:
+Name: Huidi Yuan
 
-CNetID:
+CNetID: huidiy
 
-Section:
+Section: 2
 
-Research project title:
+Research project title: Label Effects on Perceptions and Behaviors Toward Unhoused Individuals
 
-Submission date:
+Submission date: 2025/02/26
 
-Submission number (1-4):
+Submission number (1-4): 1
 
-Project GitHub repository URL:
+Project GitHub repository URL: <https://github.com/huidiyuan/PC-Lable-Homeless>
 
-Filename of manuscript .qmd:
+Filename of manuscript .qmd: 00_PC_Label_Homeless_Results.qmd
 
-Filename of knitted .pdf:
+Filename of knitted .pdf: 00_PC_Label_Homeless_Results.pdf
 
 ## Overall requirements
 
@@ -102,7 +102,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Outlines the repo structure with file tree or similar
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -241,7 +241,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     2.  Combines facets with other dynamic grouping aesthetics
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -269,7 +269,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  Presents results in narrative text, table, or plot
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -371,7 +371,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     5.  References render without error and link to the correct table/figure in pdf/html output
 
-        -   [x] Objective attempt
+        -   [ ] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 

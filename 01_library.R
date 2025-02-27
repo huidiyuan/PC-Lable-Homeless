@@ -24,3 +24,7 @@ library(conflicted)
 library(flextable)
 # install.packages("ftExtra")
 library(ftExtra)
+
+# Resolve conflicts
+## filter
+conflict_prefer("filter", "dplyr")
