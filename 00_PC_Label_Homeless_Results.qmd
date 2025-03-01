@@ -161,7 +161,7 @@ A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_d
 - **Stigma Perception** (6-item 5-points Likert scale)
 - **Stereotypical Judgment** (8-item 5-points Likert scale) [@fiskeetal_2002_model]
 - **Donation Allocation** (Amount donated to homeless organizations out of three different organizations)
-See @tbl-measures for detailed measures and items.
+See @tbl-measures for detailed measures and items. 
 
 |                  | **Measures**  | **Items**                             |
 |------------------|---------------|---------------------------------------|
