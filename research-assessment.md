@@ -94,7 +94,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: You've got a lot of unnecessary files in your repo! You should remove things like temporary files (e.g., .tex), example files from apaquarto installation (e.g., apaquarto.qmd), and rendered files (e.g., .docx ad .pdf files). You've also got a lot going on in your top-level that should be better organized into folders (like moving all the csvs into a data folder).
 
 2.  Maintain an informative and up-to-date README.md
 
@@ -103,7 +103,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Outlines the repo structure with file tree or similar
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 3.  integrate a GitHub repo with an R studio project, including .gitignore file
@@ -114,7 +114,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: Once you remove the files mentioned in the first objective, you should update your .gitignore to exclude them. 
 
 4.  effectively use version control
 
@@ -123,7 +123,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Relies on document revisions rather than manually created new versions
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 ### R programming
@@ -138,7 +138,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Uses more than one function to install/load/require packages (including those used in commented code)
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 6.  Use arithmetic, comparison, and logical operators
@@ -160,8 +160,8 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  Functions are well-documented with comments
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [x] Objective met
+        -   Grader comments: 
 
 8.  Parse and write conditional statements and/or loops
 
@@ -180,7 +180,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Writes out intermediate and/or final datasets in code chunks or sourced scripts
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 10. Use `dplyr` and `tidyr` functions to transform data
@@ -192,7 +192,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  Combines `dplyr` and `tidyr` functions in a data transformation pipeline
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 11. Use `stringr` functions to work with string variables
@@ -202,7 +202,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Uses `stringr` functions in a data transformation pipeline
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 12. Use `forcats` functions to work with factor variables
@@ -213,7 +213,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: I see 1 forcats/factor function (fct_reorder) in your code. You need to use 1 more forcats function (the base functions `factor()` and `levels()` also count).
 
 ### Data visualization with ggplot2
 
@@ -224,7 +224,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  At least one plot is multi-variable
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 14. Use dynamic aesthetics to group data
@@ -232,7 +232,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     1.  Uses at least 2 unique data-mapped `aes()` arguments (e.g., color, shape, size) to group data in a plot in one or multiple plots
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 15. Use facets to create parallel plots
@@ -242,7 +242,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Combines facets with other dynamic grouping aesthetics
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 16. Create publication-quality plots using `theme` and `labs` layers
@@ -256,8 +256,8 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     4.  Uses at least 1 static aesthetic (e.g., color, shape, size) that improves visual clarity without mapping to data
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [x] Objective met
+        -   Grader comments: Nice! Only suggestion is that for Figs 1 and 2 you make the X-axis labels more readable. Maybe put them in quotes?
 
 ### Data analysis
 
@@ -270,7 +270,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  Presents results in narrative text, table, or plot
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 18. Perform simple hypothesis testing analyses for multiple data types
@@ -282,7 +282,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  Presents results in narrative text, table, or plot
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 19. Present and interpret statistics in manuscript narrative
@@ -296,7 +296,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     4.  Uses dynamic inline R code to render data-dependent text
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 ### BibTeX
@@ -326,8 +326,8 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     5.  May include references not cited in-text
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [x] Objective met
+        -   Grader comments: I suppose technically you've accomplished this, but I hope your final draft will use more than 1 citation!
 
 ### Notebooks and code chunks
 
@@ -342,8 +342,10 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     4.  Chunks are distributed throughout the manuscript, sensibly placed near the text they support
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [x] Objective met
+        -   Grader comments: giving you the point, but 2 recommendations:
+            1.  Review your chunks with the “1-chunk-1-thing” principle in mind. You have chunks that might work better broken up into 2 or more.
+            2.  For readability, add white space between chunks. In your final draft, I think you'll probably have narrative text between them, which would serve the same purpose.
 
 23. Use code chunks to set up a quarto document
 
@@ -356,7 +358,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     4.  Organizes setup chunks sensibly
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 24. Render publication-quality tables, figures, and images from code chunks
@@ -388,7 +390,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     5.  Chunks are organized sensibly and appear near the text they support
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 ### R Markdown and Quarto
@@ -398,7 +400,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     1.  Includes all necessary metadata, output options, and formatting options necessary to render an APA styled document (or other specified style if appropriate for the project)
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 27. Use quarto R Markdown to compose an academic manuscript
@@ -423,7 +425,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  Ideally, uses inline R references for *all* data-dependent text
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 29. Run inline R functions to render dynamic data-dependent text
@@ -445,5 +447,42 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     4.  No additional steps are needed (e.g., finding data, determining necessary packages to install and load, running unsourced scripts)
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
+
+
+## Reflection (Optional)
+
+Optionally (for engagement points) write a brief reflection about your work on this project. You can use this space to answer the following questions, but feel free to ignore these questions and write about whatever you think is most important.
+
+- What was the most challenging aspect of this project?
+- What was the most rewarding aspect of this project?
+- What would you do differently if you were to start over?
+- What did you learn from this project that you will carry forward to future projects?
+- What are you most proud of in this project?
+
+
+Alternatively/additionally in mind some of the suggested ways to earn engagement points, and expand on this (or other aspects of your project) in your reflection:
+
+- Creating many figures and tables, or particularly complex or creative ones
+- Impressively thoughtful and thorough narrative writing in your literature review or discussion section
+- Employing sophisticated statistical techniques in your analysis
+- Making excellent use of markdown features to create a polished final product
+- Having a maximally reproducible and dynamic manuscript
+- Fully committing to best practices for version control and GitHub integration/organization
+
+
+
+
+## Grading
+
+All final projects are graded by Dr. Dowling. You will see your grade on Canvas separated into two categories: objective points and engagement points.
+
+-   **Objective points:** 21/30
+-   **Engagement points:** 7/10
+-   **Total points:** 28/40
+
+**Comments:**
+
+Sub1: Great job, Huidi! This is a really strong draft. At this point it's mostly a matter of cleaning up the repo and working on the narrative text. BTW, I think this is a *really* interesting project. I have a kind of tangential interest perceptions of stigmatized language (and my own personal feelings about this particular example), so I'm looking forward to learning more about your work and results!
+Also: Looks like your assessment file was partly the old version and partly the new version. I added some of the missing sections at the bottom, but you should look at the newest version of the assessment file, because some of the explanations for how to meet each objective have changed.
