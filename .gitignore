@@ -51,6 +51,13 @@ rsconnect/
 # Images folder
 99_Images/
 
+# Temporary files
+*.tex
+
+# Rendered files
+*.docx
+*.txt
+
 ######################
 ### Original Data #### 
 ######################
