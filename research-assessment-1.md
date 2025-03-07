@@ -114,7 +114,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments: Once you remove the files mentioned in the first objective, you should update your .gitignore to exclude them. 
+        -   Grader comments: Once you remove the files mentioned in the first objective, you should update your .gitignore to exclude them.
 
 4.  effectively use version control
 
@@ -161,7 +161,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [x] Objective met
-        -   Grader comments: 
+        -   Grader comments:
 
 8.  Parse and write conditional statements and/or loops
 
@@ -450,29 +450,24 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
         -   [x] Objective met
         -   Grader comments:
 
-
 ## Reflection (Optional)
 
 Optionally (for engagement points) write a brief reflection about your work on this project. You can use this space to answer the following questions, but feel free to ignore these questions and write about whatever you think is most important.
 
-- What was the most challenging aspect of this project?
-- What was the most rewarding aspect of this project?
-- What would you do differently if you were to start over?
-- What did you learn from this project that you will carry forward to future projects?
-- What are you most proud of in this project?
-
+-   What was the most challenging aspect of this project?
+-   What was the most rewarding aspect of this project?
+-   What would you do differently if you were to start over?
+-   What did you learn from this project that you will carry forward to future projects?
+-   What are you most proud of in this project?
 
 Alternatively/additionally in mind some of the suggested ways to earn engagement points, and expand on this (or other aspects of your project) in your reflection:
 
-- Creating many figures and tables, or particularly complex or creative ones
-- Impressively thoughtful and thorough narrative writing in your literature review or discussion section
-- Employing sophisticated statistical techniques in your analysis
-- Making excellent use of markdown features to create a polished final product
-- Having a maximally reproducible and dynamic manuscript
-- Fully committing to best practices for version control and GitHub integration/organization
-
-
-
+-   Creating many figures and tables, or particularly complex or creative ones
+-   Impressively thoughtful and thorough narrative writing in your literature review or discussion section
+-   Employing sophisticated statistical techniques in your analysis
+-   Making excellent use of markdown features to create a polished final product
+-   Having a maximally reproducible and dynamic manuscript
+-   Fully committing to best practices for version control and GitHub integration/organization
 
 ## Grading
 
@@ -484,5 +479,4 @@ All final projects are graded by Dr. Dowling. You will see your grade on Canvas 
 
 **Comments:**
 
-Sub1: Great job, Huidi! This is a really strong draft. At this point it's mostly a matter of cleaning up the repo and working on the narrative text. BTW, I think this is a *really* interesting project. I have a kind of tangential interest perceptions of stigmatized language (and my own personal feelings about this particular example), so I'm looking forward to learning more about your work and results!
-Also: Looks like your assessment file was partly the old version and partly the new version. I added some of the missing sections at the bottom, but you should look at the newest version of the assessment file, because some of the explanations for how to meet each objective have changed.
+Sub1: Great job, Huidi! This is a really strong draft. At this point it's mostly a matter of cleaning up the repo and working on the narrative text. BTW, I think this is a *really* interesting project. I have a kind of tangential interest perceptions of stigmatized language (and my own personal feelings about this particular example), so I'm looking forward to learning more about your work and results! Also: Looks like your assessment file was partly the old version and partly the new version. I added some of the missing sections at the bottom, but you should look at the newest version of the assessment file, because some of the explanations for how to meet each objective have changed.

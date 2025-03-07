@@ -43,6 +43,14 @@ data_clean <- data_deidentify %>%
       .default = NA
     )
   ) %>%
+  # Create shorter label and rename old label column
+  mutate(
+    label_full = label, 
+    label = case_when(
+      label == "people who experience housing insecurity" ~ "Housing Insecurity",
+      label == "the homeless" ~ "The Homeless"
+    )
+  ) %>%
     
   ####### DATA TYPE #######
   # Correct data type
@@ -50,12 +58,16 @@ data_clean <- data_deidentify %>%
                 ~ ifelse(!is.na(suppressWarnings(as.numeric(.))),
                          as.numeric(.), 
                          .))) %>% # If it can be converted to numeric, convert it
-    # Correct data type for columns with NA
+  # Correct data type for columns with NA
   mutate(
     experience_1 = as.numeric(experience_1),
     experience_2 = as.numeric(experience_2),
     experience_3 = as.numeric(experience_3),
     SliderOverlapValue = as.numeric(SliderOverlapValue)
+  ) %>%
+  # Change label to factor type
+  mutate(
+    label = as.factor(label)
   ) %>%
   
   ####### ATTENTION CHECK #######

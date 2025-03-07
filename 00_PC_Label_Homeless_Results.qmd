@@ -1,5 +1,5 @@
 ---
-title: "Label Effects on Perceptions and Behaviors Toward Unhoused Individuals"
+title: "Inclusive Labels: Label Effects on Perceptions and Behaviors Toward Unhoused Individuals"
 # If blank, the running header is the title in upper case.
 shorttitle: "Label Effects and Homlessness"
 # Set names and affiliations.
@@ -8,7 +8,7 @@ shorttitle: "Label Effects and Homlessness"
 author:
   - name: Huidi Yuan
     affiliation: "University of Chicago"
-abstract: "This study investigates how inclusive labels, compared to stigmatizing terms, shape public perceptions and prosocial behaviors toward unhoused individuals. Drawing on theories of labeling and stigma, we hypothesized that person-centered labels (e.g., “people experiencing housing insecurity”) would reduce stigma and stereotypes (H1) and increase donations (H2). A preregistered online experiment with 400 U.S. adults tested these hypotheses using a between-subjects design. Participants viewed materials referencing either “the homeless” (stigmatizing label) or “people experiencing housing insecurity” (inclusive label). Results supported H1: PC labels significantly reduced stigma and negative stereotypes. However, H2 was unsupported, as donations did not differ between conditions. Stigma negatively correlated with donation amounts, but stereotypes showed no relationship. Exploratory analyses found no moderation by political orientation or age. These findings highlight the potential of PC labels to mitigate stigma, though additional strategies are needed to bridge the gap between attitudinal and behavioral change. Implications for advocacy, policy communication, and future research are discussed."
+abstract: "This study investigates how inclusive labels, compared to stigmatizing terms, shape public perceptions and prosocial behaviors toward unhoused individuals. Drawing on theories of labeling and stigma, we hypothesized that person-centered labels (e.g., “people experiencing housing insecurity”) would reduce stigma and stereotypes and increase donations. A preregistered online experiment with 400 U.S. adults tested these hypotheses using a between-subjects design. Participants viewed materials referencing either “the homeless” (stigmatizing label) or “people experiencing housing insecurity” (inclusive label). Results supported H1: inclusive labels significantly reduced stigma and negative stereotypes. However, H2 was unsupported, as donations did not differ between conditions. Stigma negatively correlated with donation amounts, but stereotypes showed no relationship. Exploratory analyses found no moderation by political orientation or age. These findings highlight the potential of inclusive labels to mitigate stigma, though additional strategies are needed to bridge the gap between attitudinal and behavioral change. Implications for advocacy, policy communication, and future research are discussed."
 # Put as many keywords at you like, separated by commmas (e.g., [reliability, validity, generalizability])
 keywords: [Inclusive Language, stigma, homelessness, prosocial behavior, labeling effects]
 # Suppress author note
@@ -59,13 +59,13 @@ set.seed(1234)
 #| include: false
 
 # Read data
-data_deidentify <- read.csv("data_deidentify.csv")
+data_deidentify <- read.csv("02_Working_Data/data_deidentify.csv")
 
 # Move ppt_ID to the first column
 data_deidentify <- data_deidentify %>%
   select(ppt_ID, everything())
 
-view(data_deidentify)
+# view(data_deidentify)
 ```
 
 ```{r}
@@ -76,7 +76,7 @@ view(data_deidentify)
 source("01_cleaning_recode.R")
 
 # The cleaned data is saved as data_clean
-view(data_clean)
+# view(data_clean)
 ```
 
 ```{r}
@@ -91,7 +91,7 @@ data_demo <- data_clean %>%
          comment
          )
 
-write.csv(data_demo, "data_demo.csv", row.names = FALSE)
+write.csv(data_demo, "02_Working_Data/data_demo.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -112,7 +112,7 @@ data_fr <- data_clean %>%
          comment
          )
 
-write.csv(data_fr, "data_fr.csv", row.names = FALSE)
+write.csv(data_fr, "02_Working_Data/data_fr.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -133,35 +133,68 @@ data_main <- data_clean %>%
          )
 
 # View the main data
-view(data_main)
+# view(data_main)
 
 # Save the main data
-write.csv(data_main, "data_main.csv", row.names = FALSE)
+write.csv(data_main, "02_Working_Data/data_main.csv", row.names = FALSE)
 ```
 
-# Introduction
 
-The way individuals are labeled—such as "`r data_main$label[2]`" versus "`r data_main$label[1]`"—can influence stigma, stereotypes, and charitable behavior. This study examines how different labels affect:
+On a given day in January 2023, roughly 653,104 people, or about 20 of every 10,000 people, experienced homelessness across the United States. This is the highest number of people who reported experiencing homelessness on a single night since 2007 based on the report by @tanyadesousaetal_2023_2023. Although experiences vary within the unhoused population, people often categorize individuals experiencing housing insecurity with the broad and stigmatized label “*the homeless*” [@phelanetal_1997_stigma]. This label contains negative biases that can affect the public’s perception, attitude, and behavior toward unhoused individuals. Therefore, it is important to understand how different labels influence public responses to homelessness in order to develop effective and caring social interventions and policies to support this marginalized group. 
 
-- Perceptions of homelessness-related stigma,
-- Stereotypical judgments,
-- Donation behaviors.
+## Label Effects
 
-We hypothesize that:
+Labels play a fundamental role in social cognition and can shape how individuals categorize and interact with labeled individuals. Humans can comprehend others by assigning labels through descriptive-to-prescriptive reasoning, a skill they developed from early childhood [@roberts_2022_descriptivetoprescriptive; @robertsetal_2021_should]. However, labeling can not only reduce our cognitive load as a mental shortcut but also backfire on our perceptions, judgments, and behaviors, which may lead to biases and stereotypes [@foronirothbart_2013_abandoning]. Socially stigmatized labels, in particular, can negatively influence individuals' behaviors and willingness to help members of associated groups. For example, labels such as “mentally ill” and “welfare recipient” are linked to public perceptions that those labeled are responsible for their situation, thereby reducing sympathy, increasing the preference for social distance, and creating a reluctance to offer support [@angermeyermatschinger_2003_stigma; @pescosolidoetal_2013_backbone]. 
 
-1. Person-centered labels reduce stigma and stereotypes (H1); 
-2. Person-centered labels increase donations to unhoused group (H2);
-3. Stigma and stereotypes predict donation amounts to unhoused group (H3).
+However, notably, the same stigmatizing labels can sometimes evoke compassion if people view the labeled group as severely disadvantaged or morally deserving of help. For instance, when people in poverty are perceived as not responsible for their financial hardship, the same stigmatizing label, “the poor,” arouses more sympathy [@phelanetal_2008_stigma; @weineretal_2011_attributional]. This mixed effect of stigmatized labels can help understand public responses to marginalized groups, as certain stigmatized labels may simultaneously reinforce negative stereotypes and invoke moral obligations. Moreover, the influence of stigmatized labels on prosocial behaviors remains unclear, particularly whether such labels facilitate or inhibit helping behaviors. Nevertheless, the previous studies about label effects showed more evidence for the negative impact of stigmatizing labels. Therefore, in order to replace the conventional and stigmatized labels, many new terms have been developed in recent years, known as inclusive labels. 
 
-## Methods
-### Participants
-A total of `r nrow(data_deidentify)` participants were recruited. `r nrow(data_deidentify) - nrow(data_main)` participants were excluded due to failing attention checks. Thus the final sample size was `r nrow(data_main)`.
+## Inclusive Labels 	
 
-### Measures
-- **Stigma Perception** (6-item 5-points Likert scale)
-- **Stereotypical Judgment** (8-item 5-points Likert scale) [@fiskeetal_2002_model]
-- **Donation Allocation** (Amount donated to homeless organizations out of three different organizations)
-See @tbl-measures for detailed measures and items. 
+Inclusive language often emphasizes the personhood of individuals, preferring terms like “person who is incarcerated” or “person living with HIV” to “prisoner” or “HIV-infected patient” [@tranetal_2018_words]. Inclusive language has been considered as an alternative to traditional and often stigmatizing labels, which may reduce the negative impact of labeling on underrepresented and marginalized groups [@bedelletal_2018_names; @tranetal_2018_words]. The shift toward inclusive terms is based on the belief that language shapes thoughts. It suggests that non-stigmatizing labels might help alter public attitudes and reduce bias. However, there are debates about the effectiveness of inclusive languages: some argue that inclusive language emphasizes group differences, potentially reinforcing divisions, while others believe it can diminish stigmatization by promoting respectful language [@duarteetal_2015_political]. 
+Mental health, physical health, and incarceration are the most well-studied topics in the existing research on the use of inclusive language. Studies in mental health, for instance, indicate that the more person-centered labels (i.e., inclusive labels) can reduce negative stereotyping by reframing individuals as people first rather than as representatives of a stigmatized category. For example, “person with schizophrenia” fosters empathy and reduces stigma compared to categorical terms like “schizophrenic” [@corriganetal_2003_attribution]. 
+
+However, while inclusive labels have shown influence in reducing stigmatized beliefs toward some marginalized groups, their effectiveness in fostering supportive behaviors has not been well-studied. Nevertheless, each underrepresented and marginalized group has its own characteristics and social perceptions. Therefore, the conclusions from one group cannot be directly applied to another group. Compared to other conditions, unhoused individuals, as an unignorable marginalized social group, have been understudied in the topic of inclusive label effects. 
+
+## Labels for Unhoused Individuals
+
+Homelessness is associated with high levels of stigma and stigmatized labels that frame individuals as abnormal or morally responsible for their circumstances. Conventional but stigmatized terms like “the homeless” can evoke stereotypes, reduce public empathy, and reinforce societal distance from unhoused individuals [@belcherdeforge_2012_social]. They may thereby decrease people’s direct support for unhoused individuals and the support for policies or interventions aimed at helping them. Inclusive terms such as “people who experience housing insecurity” attempt to reframe homelessness as a condition rather than an identity, highlighting the external factors contributing to housing insecurity.
+
+Previous studies have explored public perceptions of homelessness and the factors influencing support for homeless services [@belcherdeforge_2012_social; @kimetal_2023_analyzing; @phelanetal_1997_stigma], but research specifically investigating the effect of labeling on public attitudes and willingness to help remains limited. Studies on other marginalized groups have shown that label choice significantly affects stigmatization and support [@angermeyermatschinger_2003_stigma; @corriganetal_2003_attribution]. However, few studies have examined whether inclusive language can shift public opinion and behavior toward unhoused individuals. Hence, in order to address the gaps in label effects on helping behaviors and in homelessness study, this thesis will focus on the role of inclusive language, or person-centered labeling specifically, in reducing stigma and fostering prosocial behaviors toward unhoused individuals.
+
+## Research Question & Hypothesis 
+
+In the present study, we will explore the question: can inclusive language, specifically person-centered labeling, reduce perceptions of stigma and stereotypes and foster prosocial behaviors toward unhoused individuals among English-speaking adults? Previous studies show that compared to conventional terms, inclusive terms for stigmatized groups will foster empathy and reduce stigma [@angermeyermatschinger_2003_stigma; @pescosolidoetal_2013_backbone]. Aligning with these studies, we hypothesize that inclusive terms will reduce perceptions of stigma and stereotypes of unhoused individuals (Hypothesis 1). Furthermore, since conventional labels may make the public think the labeled individuals are responsible for their situations and thus create a reluctance to offer support, we hypothesize that using inclusive labels will foster people’s helping behaviors toward unhoused individuals (Hypothesis 2).
+
+Understanding these questions may facilitate society and organizations to develop more effective and reliable interventions and methods to alter the negative perceptions toward unhoused individuals and promote the public’s helping behaviors. Moreover, understanding the effect of language may help to avoid the backfires from language misuse in well-intended behaviors. 
+
+# Method
+
+## Participants
+
+A total of `r nrow(data_deidentify)` participants were recruited. from an online experiment platform (e.g., Prolific) and directed to an online survey hosted on Qualtrics. All included participants will be: (1) adult US citizens or permanent residents; and (2) English speakers with English as their first language. Participants will be excluded if they do not pass an attention check. On completing the survey (approximately 13 minutes), respondents will receive compensation at the rate of $12/hour. `r nrow(data_deidentify) - nrow(data_main)` participants were excluded due to failing attention checks. Thus the final sample size was `r nrow(data_main)`.
+
+## Design and Procedure
+
+The current study will use a cross-sectional online experiment in a survey format. Participants will be randomly assigned to either inclusive or conventional label conditions. In the inclusive label condition, participants will be exposed to the term “people experiencing housing insecurity,”[^1] while in the conventional label condition, they will encounter the term “the homeless.” Participants will complete a series of measures assessing their perceptions of stigma, stereotypes, and supportive behaviors toward unhoused individuals.
+
+[^1]: The term “people experiencing housing insecurity” was chosen based on previous research on inclusive language and homelessness [@bedelletal_2018_names; @tranetal_2018_words].
+
+## Measures 
+
+The survey will measure participants’ perceptions of stigma, stereotypes, and support toward the labeled group. Perceived stigma is measured with 6 items divided into three categories: 
+
+1. Responsibility (n=2) (e.g., “[label] is responsible for their condition.”);
+2. Social distance (n=3) (e.g., “I  would be willing to have [label] as my close personal friend.”);
+3. And danger (n=1) (e.g., “[label] is dangerous.”). 
+
+The measures of responsibility and danger are developed for the current study, and the measures for social distance are derived from a validated questionnaire [@mitelmanetal_2023_discrimination]. Participants will indicate how much they agree with each item using a 5-point Likert scale (from 1 = “strongly disagree” to 5 = “strongly agree”). 
+
+Participants’ stereotypes will be measured with the 8-item Abbreviated Questionnaire from the Stereotype Content Model [@fiskeetal_2002_model]. Participants will report their beliefs on unhoused individuals’ competence, warmth, status, and competition. They will respond to each item on a 5-point Likert scale (from 1 = “not at all” to 5 = “extremely”; or 1 = “strongly disagree” to 5 = “strongly agree”). 
+
+To measure supportive behavior in a relatively realistic setting, participants will be asked to distribute a \$100 donation among three organizations: one focused on unhoused individuals, one dedicated to children, and one for animals. After reading brief descriptions of the organizations, with the labels in the unhoused organization descriptions assigned according to their label conditions, participants can allocate the funds to each organization as they choose, with a total of \$100 required. The amount allocated to the unhoused organization will be recorded as their supportive behavior to unhoused individuals (see @tbl-measures for detailed measures and items). 
+
+At the end of the survey, the demographics of participants will be collected, including their age, gender, education level, and annual household income. 
+This study was approved by the University of Chicago Social and Behavioral IRB Office (**H11209**). Informed consent will be obtained from all participants. 
 
 |                  | **Measures**  | **Items**                             |
 |------------------|---------------|---------------------------------------|
@@ -180,11 +213,11 @@ See @tbl-measures for detailed measures and items.
 data-quarto-disable-processing="true"}
 
 # Result
-## Person-Centered Labels Reduce Stigma and Stereotypes (H1)
+## H1: Person-Centered Labels and Perceptions
 ### Stigma
 
 ```{r}
-#| label: functions-anova-report
+#| label: functions-report-anova
 #| include: false
 
 # Function to report one-way ANOVA results in text
@@ -205,8 +238,30 @@ report_anova <- function(model) {
   
   return(report)
 }
-
 ```
+
+```{r}
+#| label: function-report-mean-by-group
+#| include: false
+
+# Function to report mean and standard deviation for specific vairbale in specific label group
+report_mean_by_group <- function(data, variable, group) {
+  
+  # Filter data by label
+  data_label <- data %>%
+    filter(label == group)
+  
+  # Calculate mean and standard deviation
+  mean_value <- round(mean(data_label[[variable]], na.rm = TRUE), 2)
+  sd_value <- round(sd(data_label[[variable]], na.rm = TRUE), 2)
+  
+  # Construct the APA formatted string
+  report <- paste0("$M$ = ", mean_value, ", $SD$ = ", sd_value)
+  
+  return(report)
+}
+```
+
 
 ```{r}
 #| label: f-test-stigma-by-label
@@ -217,26 +272,8 @@ stigma_aov <- aov(stigma_avg ~ label, data = data_main)
 summary(stigma_aov)
 
 ```
-Stigma perception significantly differed by label `r report_anova(stigma_aov)`.
 
-```{r}
-#| label: fig-stigma-by-label
-#| fig.cap: "Stigma: Conventional vs. Inclusive Labels"
-#| fig.width: 4
-#| fig.height: 3
-
-# Boxplot of stigma by label
-ggplot(data_main, aes(x = label, y = stigma_avg, fill = label)) +
-  geom_boxplot() +
-  labs(title = "Boxplot of Average Stigma Perception by Label",
-    x = "Label",
-    y = "Average Stigma Perception") +
-  theme_minimal() +
-  theme(legend.position = "none") +
-  stat_compare_means(method = "anova",
-                     label.x = 1.3,
-                     label.y = 5)
-```
+A one-way ANOVA revealed significant differences in perceptions of stigma between participants exposed to inclusive labels and conventional labels. For stigma (average across responsibility, social distance, and dangerousness), the main effect of label condition was significant (`r report_anova(stigma_aov)`) (see @fig-stigma-stereotype-by-label-1). Participants in the inclusive label condition reported lower stigma perceptions (`r report_mean_by_group(data_main, "stigma_avg", "Housing Insecurity")`) compared to those in the conventional label condition (`r report_mean_by_group(data_main, "stigma_avg", "The Homeless")`).
 
 ### Stereotypes
 ```{r}
@@ -247,18 +284,34 @@ ggplot(data_main, aes(x = label, y = stigma_avg, fill = label)) +
 stereotype_aov <- aov(stereotype_avg ~ label, data = data_main)
 summary(stereotype_aov)
 ```
-Stereotype perception significantly differed by label `r report_anova(stereotype_aov)`.
+
+Similarly, a one-way ANOVA revealed that stereotype perceptions (average across competence, warmth, status, and competition) also differed significantly by label condition (`r report_anova(stereotype_aov)`) (see @fig-stigma-stereotype-by-label-2). The inclusive label associated with lower negative stereotypes (`r report_mean_by_group(data_main, "stereotype_avg", "Housing Insecurity")`)than the conventional label (`r report_mean_by_group(data_main, "stereotype_avg", "The Homeless")`).
 
 ```{r}
-#| label: fig-stereotype-by-label
-#| fig.cap: "Stereotype: Conventional vs. Inclusive Labels"
+#| label: fig-stigma-stereotype-by-label
+#| fig-subcap: 
+#| - "Stigma: Conventional vs. Inclusive Labels"
+#| - "Stereotype: Conventional vs. Inclusive Labels"
 #| fig.width: 4
 #| fig.height: 3
+#| layout-ncol: 2
+
+# Boxplot of stigma by label
+ggplot(data_main, aes(x = label, y = stigma_avg, fill = label)) +
+  geom_boxplot() +
+  labs(title = "Average Stigma Perception by Label",
+    x = "Label",
+    y = "Average Stigma Perception") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  stat_compare_means(method = "anova",
+                     label.x = 1.3,
+                     label.y = 5)
 
 # Boxplot of stereotypes by label
 ggplot(data_main, aes(x = label, y = stereotype_avg, fill = label)) +
   geom_boxplot() +
-  labs(title = "Boxplot of Average Stereotype Perception by Label",
+  labs(title = "Average Stereotype Perception by Label",
     x = "Label",
     y = "Average Stereotype Perception") +
   theme_minimal() +
@@ -278,13 +331,43 @@ cor_stigma_stereotype <- cor.test(data_main$stigma_avg, data_main$stereotype_avg
 
 cor_stigma_stereotype
 ```
-Stigma and stereotypes were significantly correlated.
+```{r}
+#| label: function-report-single-correlation
+#| include: false
+
+# Function to report correlation results in text
+report_correlation <- function(cor_result,
+                               r_digits = 2, 
+                               p_digits = 3) {
+  # Extract correlation results
+  r <- round(cor_result$estimate, r_digits)
+  df <- cor_result$parameter
+  p <- cor_result$p.value
+  
+  # Conditional p value
+  if (p < 0.001) {
+    p_text <- "< .001"
+  } else {
+    p_text <- paste0("= ", round(p, p_digits))
+  }
+  
+  # Construct the APA formatted string
+  report <- paste0("$r$(", df, ") = ", r, ", $p$ ", p_text)
+  
+  return(report)
+}
+
+```
+
+Furthermore, stigma and stereotypes were significantly positively correlated (`r report_correlation(cor_stigma_stereotype)`), suggesting that lower stigma perceptions co-occurred with reduced stereotypical beliefs. 
+
+These findings support Hypothesis 1. They suggest that person-centered inclusive labels can reduce stigma and stereotypes toward unhoused individuals. When people see inclusive labels, they are less likely to hold stigmatizing beliefs and stereotypes about the labeled group, which is unhoused individuals in this case. 
 
 ```{r}
 #| label: fig-correlation-stigma-stereotype
 #| fig.cap: "Stigma vs. Stereotypes"
 #| fig.width: 4
-#| fig.height: 3
+#| fig.height: 2.5
 
 # Scatterplot and linear regression of stigma and stereotypes
 ggplot(data_main, aes(x = stigma_avg, y = stereotype_avg, color = label)) +
@@ -299,20 +382,9 @@ ggplot(data_main, aes(x = stigma_avg, y = stereotype_avg, color = label)) +
 
 ## H2: Person-Centered Labels vs. Donations
 ### Donation Distribution
-```{r}
-#| label: donation-distribution-by-label
-#| include: false
+Among the three organizations, avergae donation to the unhoused organization is the highest (report mean donation to unhoused) compared to children (report mean donation to children) and animal (report mean donation to animal) organizations (see @fig-donate-all-by-label).
 
-# Mean donate_1,2,3 by label
-mean_donate <- data_main %>%
-  group_by(label) %>%
-  summarise(
-    mean_donate_unhoused = mean(donate_unhoused, na.rm = TRUE),
-    mean_donate_children = mean(donate_children, na.rm = TRUE),
-    mean_donate_animals = mean(donate_animals, na.rm = TRUE)
-  )
-```
-Among the three organizations, avergae donation to the unhoused organization is the highest (report mean donation to unhoused) compared to children (report mean donation to children) and animal (report mean donation to animal) organizations. See figure... 
+Among the three organizations, participants allocated the highest average donation to the unhoused organization ($M$ = \$`r round(mean(data_main$donate_unhoused, na.rm = TRUE), 2)`, $SD$ = `r round(sd(data_main$donate_unhoused, na.rm = TRUE), 2)`), followed by children ($M$ = \$`r round(mean(data_main$donate_children, na.rm = TRUE), 2)`, $SD$ = `r round(sd(data_main$donate_children, na.rm = TRUE), 2)`) and animal organizations ($M$ = \$`r round(mean(data_main$donate_animals, na.rm = TRUE), 2)`, $SD$ = `r round(sd(data_main$donate_animals, na.rm = TRUE), 2)`).
 
 ### Donation to Unhoused Org. by Label
 ```{r}
@@ -324,10 +396,6 @@ donate_aov <- aov(donate_unhoused ~ label, data = data_main)
 
 summary(donate_aov)
 ```
-
-Donation, however, did not significantly differ by label `r report_anova(donate_aov)`.
-[report mean donation for unhoused org. by label]
-
 
 ```{r}
 #| label: fig-donate-all-by-label
@@ -354,8 +422,9 @@ ggplot(data_main_donate_long, aes(x = fct_reorder(organization, donation, .desc 
                      label.y = 105)
 ```
 
-## Stigma and stereotypes predict donation (H3)
-### Stigma and Donation
+Donation, however, did not significantly differ by label `r report_anova(donate_aov)`. Participants in the inclusive label condition did not donate more to the unhoused organization (`r report_mean_by_group(data_main, "donate_unhoused", "Housing Insecurity")`) compared to those in the conventional label condition (`r report_mean_by_group(data_main, "donate_unhoused", "The Homeless")`). Moreover, the donation to children and animal organizations also did not differ by label (see @fig-donate-all-by-label). Thus, Hypothesis 2 was not supported. Labeling did not influence donation behaviors toward unhoused individuals in our study setting. 
+
+## H3: Perceptions vs. Donation
 ```{r}
 #| label: correlation-stigma-donation
 #| include: false
@@ -381,14 +450,49 @@ moderation_model <- lm(donate_unhoused ~ stigma_avg_c * label, data = data_main_
 
 ## Display results
 summary(moderation_model)
+
+# Extract coefficients
+coef_summary <- summary(moderation_model)$coefficients
+
+# Store model coefficients
+r_squared <- summary(moderation_model)$r.squared
+f_stat <- summary(moderation_model)$fstatistic
+p_value <- pf(f_stat[1], f_stat[2], f_stat[3], lower.tail = FALSE)
 ```
-Stigma perception is negatively correlated with donation amount. However, the relationship between stigma and donation did not differ by label.
+```{r}
+#| label: function-report-vairable-coefficients
+#| include: false
+
+# Function to report variable coefficients in text
+report_coef <- function(term, coef_summary) {
+  estimate <- round(coef_summary[term, "Estimate"], 2)
+  se <- round(coef_summary[term, "Std. Error"], 2)
+  t <- round(coef_summary[term, "t value"], 2)
+  p <- coef_summary[term, "Pr(>|t|)"]
+  
+  p_text <- ifelse(p < 0.001, "< .001", paste0("= ", round(p, 3)))
+  
+  paste0("*b* = ", estimate, ", *SE* = ", se, ", *t* = ", t, ", *p* ", p_text)
+}
+```
+
+A linear regression was conducted to predict donations to the unhoused organization based on stigma perceptions and label condition. The overall model was significant ($F$(`r f_stat[2]`, `r f_stat[3]`) = `r round(f_stat[1], 2)`, $p$ `r ifelse(p_value < 0.001, "< .001", paste0("= ", round(p_value, 3)))`, $R^2$ of `r round(r_squared, 3)`). Stigma perception negatively predicted donation amounts to the unhoused organization (`r report_coef("stigma_avg_c", coef_summary)`), such that higher stigma was associated with lower donations.However, this relationship did not differ by label condition (`r report_coef("stigma_avg_c:labelThe Homeless", coef_summary)`) (see @tbl-regression-stigma-donation and @fig-correlation-stigma-donation). 
+
+
+```{r}
+#| label: tbl-regression-stigma-donation
+#| tbl-cap: "Regression for Stigma Predicting Donation to Unhoused Organization by Label"
+
+# Table of regression results
+kable(coef_summary, digits = 3)
+```
+
 
 ```{r}
 #| label: fig-correlation-stigma-donation
 #| fig.cap: "Stigma vs. Donation"
 #| fig.width: 5
-#| fig.height: 3.5
+#| fig.height: 3
 
 # Summarize the data to count frequencies of each (stigma_avg, donate_unhoused) pair
 data_summary <- data_main %>%
@@ -406,7 +510,6 @@ ggplot(data_summary, aes(x = stigma_avg, y = donate_unhoused, color = label)) +
   theme(legend.position = "none")
 ```
 
-### Stereotypes and Donation
 ```{r}
 #| label: correlation-stereotype-donation
 #| include: false
@@ -416,9 +519,12 @@ cor_stereotype_donate <- cor.test(data_main$stereotype_avg, data_main$donate_unh
 
 cor_stereotype_donate
 ```
-Stereotype perception is not significantly correlated with donation amount.
 
-### Exploratory Analysis
+Stereotype perception, however, showed no significant correlation with donation amounts (`r report_correlation(cor_stereotype_donate)`), suggesting stereotypes alone did not directly influence prosocial behavior. 
+
+These results partially support Hypothesis 3, as stigma—but not stereotypes—predicted donation behavior. Moreover, the relationship between stigma and donation was consistent across label conditions, indicating that the effect of stigma on donation was not moderated by the label used.
+
+## Exploratory Analysis
 ```{r}
 #| label: exploratory-analysis-political
 #| include: false
@@ -443,21 +549,6 @@ politic_social_aov <- aov(donate_unhoused ~ label * political_social_binary, dat
 
 summary(politic_social_aov)
 ```
-```{r}
-#| label: fig-donate-political-by-label
-#| fig.cap: "Donation by Political Orientation and Label"
-#| fig.width: 8
-#| fig.height: 3
-
-# Boxplot of donate_unhoused by political_social_con and label
-ggplot(data_clean_politic, aes(x = label, y = donate_unhoused, fill = label)) +
-  geom_boxplot() +
-  facet_wrap(~ political_social_binary) +  # Facet by political orientation
-  labs(x = "Label", y = "Stereotype Perception") +
-  theme_minimal() +
-  theme(legend.position = "none") 
-```
-
 
 ```{r}
 #| label: exploratory-analysis-age
@@ -481,11 +572,27 @@ donate_age_aov <- aov(donate_unhoused ~ age_group, data = data_clean_age)
 
 summary(donate_age_aov)
 ```
+In order to further study the potential moderating effects of political orientation and age, we conducted exploratory analyses. Political orientation did not moderate the effect of label condition on donation amounts (`r report_anova(donate_politic_aov)`) (see @fig-donate-political-age-1). However, age marginally moderated the relationship between label condition and donations (`r report_anova(donate_age_aov)`) (see @fig-donate-political-age-2), with older participants in the inclusive label condition allocating slightly more to the unhoused organization compared to younger participants.
+
 ```{r}
-#| label: fig-donate-age-by-label
-#| fig.cap: "Donation by Age Group and Label"
-#| fig.width: 8
+#| label: fig-donate-political-age
+#| fig-subcap:
+#|  - "Donation by Political Orientation and Label"
+#|  - "Donation by Age Group and Label"
+#| fig.width: 6
 #| fig.height: 3
+#| layout-ncol: 2
+
+# Boxplot of donate_unhoused by political_social_con and label
+ggplot(data_clean_politic, aes(x = label, y = donate_unhoused, fill = label)) +
+  geom_boxplot() +
+  facet_wrap(~ political_social_binary) +  # Facet by political orientation
+  labs(x = "Label", 
+       y = "Stereotype Perception",
+       caption = "Donation by Political Orientation and Label") +
+  theme_minimal() +
+  theme(legend.position = "none") 
+
 
 # Boxplot of donate_unhoused by age_group and label
 ggplot(data_clean_age, aes(x = label, y = donate_unhoused, fill = label)) +
@@ -494,9 +601,33 @@ ggplot(data_clean_age, aes(x = label, y = donate_unhoused, fill = label)) +
   labs(x = "Label", y = "Stigma Score") +
   theme_minimal() +
   theme(axis.text.x = element_blank())  # Remove x-axis tick labels
-
 ```
 
+# Discussion
+
+Consistent with H1, we found that using inclusive labels significantly reduced stigma and negative stereotypes toward unhoused individuals. Participants who encountered the term "people experiencing housing insecurity" perceived less responsibility, social distance, and dangerousness associated with this group compared to those who were exposed to the term "the homeless." These findings align with prior research on labeling effects [@linkphelan_2001_conceptualizing] and suggest that language plays a crucial role in mitigating dehumanizing perceptions and promoting a more empathetic understanding of marginalized populations.
+
+Contrary to H2, however, donation behaviors did not significantly differ between label conditions. While participants allocated the highest average donation to organizations supporting the unhoused, the choice of label did not appear to influence the amount contributed. This finding suggests that while inclusive labels can shift attitudes, they may not be sufficient to drive behavioral change, a pattern observed in other domains of prosocial action [@cialdinietal_1990_focus]. This highlights a key limitation of linguistic interventions in affecting tangible outcomes, suggesting that other motivational factors may play a more critical role in prosocial decision-making.
+
+In partial support of H3, stigma negatively predicted donation behavior, indicating that participants with higher stigma perceptions allocated fewer resources to the unhoused organization. However, stereotypes did not significantly correlate with donation amounts, suggesting that cognitive evaluations of competence or warmth may be less influential in prosocial giving than affective responses associated with stigma. This aligns with research indicating that emotional rather than cognitive factors often drive charitable behavior [@smalletal_2007_sympathy].
+
+## Theoretical and Practical Implications
+
+Our findings contribute to the literature on stigma reduction and prosocial behavior by demonstrating the nuanced effects of labeling on both attitudinal and behavioral outcomes. While inclusive labels can reduce stigma and stereotypes, their limited impact on donation behavior suggests that additional interventions are needed to bridge the gap between perception and action. Future research should explore whether message framing (e.g., emphasizing personal agency or structural causes of homelessness) or direct appeals to moral responsibility can enhance the effectiveness of labeling interventions.
+
+Additionally, our exploratory analyses suggest that age may play a role in moderating the relationship between labeling and donation behavior. Older participants in the inclusive label condition tended to donate slightly more, indicating that generational differences in attitudes toward inclusive language may influence behavioral responses. Further research should investigate how demographic factors shape the receptiveness to linguistic framing in social advocacy contexts.
+
+## Limitations and Future Directions
+
+Despite its contributions, this study has several limitations. First, our measure of donation behavior was hypothetical rather than actual monetary contributions, which may limit the ecological validity of our findings. Future studies should incorporate real donation decisions to assess whether labeling effects persist in real-world charitable giving. Second, our sample was drawn from an online platform, which may not fully represent the diversity of attitudes found in the general population. Replicating this study with broader and more diverse participant pools would enhance the generalizability of our results.
+
+Another limitation is the potential influence of social desirability bias. Participants may have reported lower stigma in response to inclusive labels due to perceived social norms rather than genuine attitudinal shifts. Future research could address this concern using implicit measures of bias or behavioral indicators of stigma, such as willingness to interact with unhoused individuals.
+
+Finally, while our study focused on a single linguistic intervention, future research should explore how labels interact with other messaging strategies, such as narratives that emphasize personal stories of homelessness or structural explanations for housing insecurity. Combining linguistic reframing with evidence-based persuasion techniques may offer a more comprehensive approach to reducing stigma and promoting prosocial action.
+
+## Conclusion
+
+Overall, this study provides compelling evidence that inclusive labels can meaningfully reduce stigma and stereotypes associated with homelessness. However, their limited effect on donation behavior underscores the complexity of translating attitudinal change into prosocial action. These findings have important implications for advocacy groups and policymakers seeking to design effective communication strategies that not only alter perceptions but also encourage tangible support for marginalized communities. Future research should continue exploring how linguistic interventions, combined with motivational and structural factors, can foster both attitudinal and behavioral change in addressing social issues.
 
 \newpage
 # References

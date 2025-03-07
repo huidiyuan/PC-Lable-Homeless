@@ -34,7 +34,7 @@ Section: 2
 
 Research project title: Label Effects on Perceptions and Behaviors Toward Unhoused Individuals
 
-Submission date: 2025/03/
+Submission date: 2025/03/10
 
 Submission number (1-4): 2
 
@@ -141,13 +141,13 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
         -   [x] Objective met
         -   Grader comments:
 
-6.  Use arithmetic, comparison, and logical operators
+6.  **Use arithmetic, comparison, and logical operators**
 
     1.  Uses all three types of operators
 
     2.  Uses multiple operators in data transformation pipelines and/or inline R code
 
-        -   [x] Objective attempt
+        -   [x] Objective attempt: You may find them in 01_cleaning_recode.R
         -   [ ] Objective met
         -   Grader comments:
 
@@ -163,13 +163,13 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
         -   [x] Objective met
         -   Grader comments:
 
-8.  Parse and write conditional statements and/or loops
+8.  **Parse and write conditional statements and/or loops**
 
     1.  Uses conditional in multiple contexts, including dplyr pipelines
 
     2.  Uses multiple types of conditional/loop functions (e.g., `if_else()`, `case_when()`, `for`, `while`)
 
-        -   [x] Objective attempt
+        -   [x] Objective attempt: You may find if_else and case_when in 01_cleaning_recode.R
         -   [ ] Objective met
         -   Grader comments:
 
@@ -309,7 +309,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     3.  May use `cite_r()` to cite R and R packages
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -373,7 +373,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     5.  References render without error and link to the correct table/figure in pdf/html output
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -412,7 +412,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     -   NOTE: This is going to be one of the most flexible objectives to demonstrate. You need to demonstrate a range of markdown skills and use them to make a readable, informative manuscript. Hitting the four points above should do that, but you can use your judgment about what kind of markdown features will best serve your project. No matter what, you should use markdown to follow APA7 guidelines.
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -432,7 +432,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
     1.  Uses inline R functions to render at least 3 unique data-dependent text outputs (e.g., performs rounding, calculates means, subtracts one list length from another, etc. -- inline rather than in a code chunk)
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
