@@ -34,7 +34,7 @@ Section: 2
 
 Research project title: Label Effects on Perceptions and Behaviors Toward Unhoused Individuals
 
-Submission date: 2025/03/10
+Submission date: 2025/03/7
 
 Submission number (1-4): 2
 
