@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
 # 25Winter-R-Final: PC-Label-Homeless
 
 ## Repo Purpose
@@ -29,5 +23,3 @@ The behaviors here are specifically donation behaviors.
 Other than the main QMD file, which includes the final code for analysis and visualization and text of manuscript, there are also other files in the repo.
 Working code are stored in 06_New_Codes folder for tracking.
 Old codes are stored in 07_Old_Codes folder for reference.
-
-**The current version only includes the analysis and visualization part of the project. The text part is not yet fully developed.**
