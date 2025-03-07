@@ -23,3 +23,5 @@ The behaviors here are specifically donation behaviors.
 Other than the main QMD file, which includes the final code for analysis and visualization and text of manuscript, there are also other files in the repo.
 Working code are stored in 06_New_Codes folder for tracking.
 Old codes are stored in 07_Old_Codes folder for reference.
+
+Introcution and Method parts are derived from the author's MA thesis proposal.

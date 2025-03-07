@@ -455,10 +455,32 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 Optionally (for engagement points) write a brief reflection about your work on this project. You can use this space to answer the following questions, but feel free to ignore these questions and write about whatever you think is most important.
 
 -   What was the most challenging aspect of this project?
+
+    One of the major challenge was handling the entire data analysis and visualization process in R while maintaining an efficient and reproducible workflow. Cleaning the data, ensuring consistency across variables, and managing missing values required meticulous attention. Debugging R scripts and optimizing code performance were time-consuming but essential steps in ensuring the accuracy of results.
+
+<!-- -->
+
 -   What was the most rewarding aspect of this project?
+
+    The most rewarding aspect of this project was seeing how language can meaningfully influence public perceptions of homelessness. The finding that inclusive labels significantly reduced stigma and negative stereotypes reinforces the importance of language in shaping social attitudes. This contributes not only to psychological theory but also has real-world applications for advocacy groups and policymakers seeking to address homelessness through effective communication strategies. Being able to contribute empirical evidence to this ongoing discourse was particularly fulfilling.
+
+    Additionally, utilizing Quarto to write up the analysis and results was incredibly rewarding. The ability to seamlessly integrate R code, statistical output, and visualizations into a single document made the research process more efficient and transparent. Quarto's structured approach allowed for dynamic reporting and reproducibility, ensuring that any modifications to the analysis were automatically reflected in the final write-up. Finally, getting the final well-structured APA format manuscript is a rewarding result.
+
 -   What would you do differently if you were to start over?
+
+    From a technical perspective, I would invest more time in setting up automated data-cleaning pipelines in R to streamline the preprocessing steps. While my workflow was effective, refining my coding practices with more efficient data manipulation techniques (e.g., using `tidyverse` functions more strategically) could improve speed and accuracy. Additionally, exploring more advanced visualization techniques in `ggplot2` or interactive visualizations with `plotly` could enhance the interpretability of results.
+
 -   What did you learn from this project that you will carry forward to future projects?
+
+    This project highlighted the complexity of language’s role in shaping social attitudes and behavior. Moving forward, I will be more attentive to the limitations of linguistic interventions and consider how they interact with other psychological mechanisms, such as moral responsibility and emotional engagement. Additionally, I learned the importance of designing experiments that include both self-reported and behavioral measures to capture a more holistic picture of the effects being studied.
+
+    From a data science perspective, this project reinforced the value of reproducible research practices. Using Quarto allowed for clear documentation and dynamic reporting, making it easier to update analyses without redundancy. In future projects, I will prioritize well-structured, automated workflows to ensure efficiency and transparency.
+
 -   What are you most proud of in this project?
+
+    I am most proud of the study’s contribution to understanding the role of politically correct labeling in shaping public attitudes toward unhoused individuals. The results provide valuable insights into the power and limitations of language in social change efforts. The project required a blend of theoretical grounding, methodological rigor, and practical application, and successfully navigating these elements makes this research a meaningful step forward in the study of stigma and prosocial behavior.
+
+    Additionally, I am proud of the technical skills I honed throughout the data analysis and write-up process. Successfully integrating R-based statistical analysis, visualization, and documentation into a reproducible Quarto file and APA format manualscript represents a significant achievement in terms of research efficiency and best practices in open science.
 
 Alternatively/additionally in mind some of the suggested ways to earn engagement points, and expand on this (or other aspects of your project) in your reflection:
 
