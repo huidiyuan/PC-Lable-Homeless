@@ -94,7 +94,9 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments: You've got a lot of unnecessary files in your repo! You should remove things like temporary files (e.g., .tex), example files from apaquarto installation (e.g., apaquarto.qmd), and rendered files (e.g., .docx ad .pdf files). You've also got a lot going on in your top-level that should be better organized into folders (like moving all the csvs into a data folder).
+        -   Grader comments: 
+            - Big improvement! Still, you have quite a few duplicates, including old versions of most elements. Take advantage of git's version control to keep your repo clean and organized without having to rely on these backups. If you do want to keep the "old" stuff, keep it local only by adding anything "old" to your gitignore
+            - ~~You've got a lot of unnecessary files in your repo! You should remove things like temporary files (e.g., .tex), example files from apaquarto installation (e.g., apaquarto.qmd), and rendered files (e.g., .docx ad .pdf files). You've also got a lot going on in your top-level that should be better organized into folders (like moving all the csvs into a data folder).~~
 
 2.  Maintain an informative and up-to-date README.md
 
@@ -113,8 +115,8 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  .gitingore comprehensively excludes unnecessary, private, and very large files and is be commeted appropriately
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments: Once you remove the files mentioned in the first objective, you should update your .gitignore to exclude them.
+        -   [x] Objective met
+        -   Grader comments: ~~Once you remove the files mentioned in the first objective, you should update your .gitignore to exclude them.~~
 
 4.  effectively use version control
 
@@ -148,7 +150,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Uses multiple operators in data transformation pipelines and/or inline R code
 
         -   [x] Objective attempt: You may find them in 01_cleaning_recode.R
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 7.  Parse and define functions and arguments
@@ -170,7 +172,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Uses multiple types of conditional/loop functions (e.g., `if_else()`, `case_when()`, `for`, `while`)
 
         -   [x] Objective attempt: You may find if_else and case_when in 01_cleaning_recode.R
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 9.  Use `readr` functions to read in and write out data
@@ -181,7 +183,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [x] Objective met
-        -   Grader comments:
+        -   Grader comments: FYI -- the readr functions use underscores, not periods. so read_csv() vs read.csv() (which is from base r and has different limitations)
 
 10. Use `dplyr` and `tidyr` functions to transform data
 
@@ -212,8 +214,8 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     2.  Uses `forcats` functions in a data transformation pipeline
 
         -   [x] Objective attempt
-        -   [ ] Objective met
-        -   Grader comments: I see 1 forcats/factor function (fct_reorder) in your code. You need to use 1 more forcats function (the base functions `factor()` and `levels()` also count).
+        -   [x] Objective met
+        -   Grader comments: ~~I see 1 forcats/factor function (fct_reorder) in your code. You need to use 1 more forcats function (the base functions `factor()` and `levels()` also count).~~
 
 ### Data visualization with ggplot2
 
@@ -257,7 +259,9 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [x] Objective met
-        -   Grader comments: Nice! Only suggestion is that for Figs 1 and 2 you make the X-axis labels more readable. Maybe put them in quotes?
+        -   Grader comments: 
+            - A few issues, but I'm going to group them up together with some other things in #24 because it's not really worth losing this whole point
+            - ~~Nice! Only suggestion is that for Figs 1 and 2 you make the X-axis labels more readable. Maybe put them in quotes?~~
 
 ### Data analysis
 
@@ -310,7 +314,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     3.  May use `cite_r()` to cite R and R packages
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 21. Render an APA7 references page from a .bib file
@@ -327,7 +331,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [x] Objective met
-        -   Grader comments: I suppose technically you've accomplished this, but I hope your final draft will use more than 1 citation!
+        -   Grader comments: ~~I suppose technically you've accomplished this, but I hope your final draft will use more than 1 citation!~~
 
 ### Notebooks and code chunks
 
@@ -375,7 +379,13 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
 
         -   [x] Objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: a few small things adding up
+            - Don't use duplicate titles. Only use fig-cap or tbl-cap to title, not ggplot labs or table function arguments. Ditto with apa-note vs ggplot subtitle/caption or table equivalents
+            - Table 2 does not have meaningful item names. These need to be plain English. If you wouldn't write "stigma_avg_c:labelThe Homeless" in the body of the paper, it shouldn't be in your table.
+            - Same with Figure 4
+            - Table 2 is pushing text content off the page (granted I know tables are a mess with APAquarto and this takes major debugging; definitely wouldn't have docked you the point just for this!)
+            - Figures 6 and 7 are not legible, the text is much too small. I'm also not sure why you have opted to put them side by side
+
 
 25. Execute descriptive analyses and/or hypothesis testing in code chunks
 
@@ -413,7 +423,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     -   NOTE: This is going to be one of the most flexible objectives to demonstrate. You need to demonstrate a range of markdown skills and use them to make a readable, informative manuscript. Hitting the four points above should do that, but you can use your judgment about what kind of markdown features will best serve your project. No matter what, you should use markdown to follow APA7 guidelines.
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 28. Use inline R variables to replace static text
@@ -433,7 +443,7 @@ Refer to the website for general tips on meeting these objectives and an FAQ.
     1.  Uses inline R functions to render at least 3 unique data-dependent text outputs (e.g., performs rounding, calculates means, subtracts one list length from another, etc. -- inline rather than in a code chunk)
 
         -   [x] Objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 30. Use `knitr` and quarto to produce an APA7 formatted 1-click PDF manuscript
@@ -495,10 +505,12 @@ Alternatively/additionally in mind some of the suggested ways to earn engagement
 
 All final projects are graded by Dr. Dowling. You will see your grade on Canvas separated into two categories: objective points and engagement points.
 
--   **Objective points:** 21/30
--   **Engagement points:** 7/10
--   **Total points:** 28/40
+-   **Objective points:** 28/30
+-   **Engagement points:** 10/10
+-   **Total points:** 38/40
 
 **Comments:**
+
+Final: Nice work! You've put together a very polished and cohesive paper, both in terms of the technical skills from class and the research itself. I'd be very interested to see where you go from here!
 
 Sub1: Great job, Huidi! This is a really strong draft. At this point it's mostly a matter of cleaning up the repo and working on the narrative text. BTW, I think this is a *really* interesting project. I have a kind of tangential interest perceptions of stigmatized language (and my own personal feelings about this particular example), so I'm looking forward to learning more about your work and results! Also: Looks like your assessment file was partly the old version and partly the new version. I added some of the missing sections at the bottom, but you should look at the newest version of the assessment file, because some of the explanations for how to meet each objective have changed.
